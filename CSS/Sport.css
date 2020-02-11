@@ -1,0 +1,149 @@
+  /***************************************************************************/
+ /************* CSS destiné principalement à la page Sport   **************/
+/***************************************************************************/
+
+/*L'indentation dans les  paragraphes */
+p{
+    text-indent: 30px;
+
+}
+
+.biblio-contenu {
+    box-sizing: border-box;/*Les propriétés width et height incluent 
+                           le contenu, le remplissage (padding), la bordure, */
+    float: left; /*   afin d'aligné les div de la class biblio-contenu a gauche
+                   de div de la class biblio-menu*/
+} 
+
+/* le style des titres de type h3*/
+.titre-h3{
+  font-size: large; /* grands */
+  font-weight: bold; /* en gras */
+  font-family: Arial; /* Arial */
+  color:rgb(212, 47, 36); /* couleur du text */
+  margin: 4px; /*petit margin */
+}
+
+.titre-h5{
+  text-indent: 30px; /* l indentation */
+  font-size: medium; /* medium size */
+  font-weight: bold; /* en gras */
+  font-family: Arial; /* Arial police*/ 
+  color:rgba(226, 106, 106, 1); /* la couleur du text */
+  margin: 3px; /* petit margin */
+
+}
+
+/* image de salima souakri */
+#unicef_souakri_img{
+  border-radius: 10%; /*définit les  coins arrondis un peu  */ 
+  width: 200px;
+}
+ 
+/*Table qui illustre la carriére du perssonage */
+/* niveau : debut ou en plein ou fin de carriére */
+.niveau{
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  text-align: center;
+  padding: 2%;
+  width: 20%;
+}
+
+/* le contenu de chaque niveau */
+.contenu_niv {
+  width: 80%;
+  color:grey;
+  text-align: left;
+  padding:1%;
+}
+
+/* le style  des élement dt et li  des cellules */
+.contenu_niv ol li,.contenu_niv dl dt, .cel-hass-prix dl dt {
+  color: teal;
+  font-weight: bold;
+  font-size: medium;
+}
+
+/******/
+
+/*  table qui illustre les palmarés  des personnages   */
+
+/* l'entete (th)*/
+.entete_table_sport{
+background-color: rgba(45, 170, 150,0.9);
+  border:1px solid rgba(45, 170, 150,0.9);
+  color:white;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center; 
+
+}
+
+/* les celules */
+.cellule_table_sport{
+  color:rgb(49, 104, 98);
+background-color: rgba(45, 170, 150,0.3);
+  border:1px solid rgba(45, 170, 150,0.3);
+   font-size: medium;
+  text-align: center; 
+}
+/* style du font  des cellules */
+.cellule_contenu{
+  color:#111;
+  font-size: medium;
+  text-align: left;
+}
+/* l'image de la medaille*/
+.medaille{
+  width: 50px;
+  margin-right: 25%;margin-left: 25%;
+}
+
+/* le font du rang */
+.range{
+  font-weight: bold;
+  font-size: large;
+  color:black;
+}
+
+/*********/
+
+/* La table des Prix de hassiba boulmerka */
+
+.cel-img-prix-has img{
+  width : 100%;
+
+}
+#Images-prix-has .cel-img-prix-has {
+  width: 396px;
+  height: 128px;
+  border: 2px solid #000;
+  border-radius: 0 32px;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+#Images-prix-has .cel-img-prix-has:after {
+ position: absolute;
+  bottom: -2px;
+  right: -2px;
+  background: #fff;
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.entete_table_hassiba{
+  background-color:#ff7675;
+  border:2px solid #d63031;
+  color:white;
+  font-size: large;
+  font-weight: bold;
+  text-align: center; 
+  padding: 15px 25px 15px 25px ;
+}
+/******/

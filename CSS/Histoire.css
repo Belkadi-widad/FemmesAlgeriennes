@@ -1,0 +1,201 @@
+  /***************************************************************************/
+ /************* CSS destiné principalement à la page Histoire  **************/
+/***************************************************************************/
+.poeme{
+     /*** CSS appliqué sur tout élément significant une citation ou un dictons , poeme ...etc,
+      ayant la class poeme***/
+    width : 85%; /* Largeur du div */
+    display: block ;  /* Pour qu'il aye un comportement de block */
+    font-weight: bold;/* Mode d'écriture en gras */
+    color:rgba(150, 40, 27, 1);/* couleur de la police */
+    font-weight: large;/* taille de la police */
+    margin : 1% 5%; /* Un margin pour le div contenant le poème */
+    padding : 1% 3%;/* Un padding pour le div contenant le poème */
+    background-color: #ffeaa7; /* Un margin pour le div contenant le poème */
+    border-radius: 20px; /* Un degrés de bordure */
+    text-align: center;/* Alignement du text au centre */
+}
+.titre-h3{
+    /*** Style spécifiant les titres écrite en h3 ***/
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial;
+    color:rgb(212, 47, 36);
+    margin: 4px;
+}
+
+.titre-h5{
+   /*** Style spécifiant les titres écrite en h5 ***/
+    text-indent: 30px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: Arial;
+    color:rgba(226, 106, 106, 1);
+    margin: 3px;
+}
+
+#stat_fatma_nsoumer{
+   /*** Style pour la figure représentant la statue de fatma nsumer ***/
+    border-radius: 5%;
+    width: 120px;
+}
+
+figure figcaption{
+   /*** Style de caption ( titre de figure ) appliqué sur 
+   les figure de la page histoire***/
+    font-size: small;
+    color:grey;
+    font-weight: bold;
+}
+
+.entete_table_fatma{
+    /*** Entete de la table des différentes actes de fatma nsumer ***/
+    background-color:rgb(49, 104, 98);/* Couleur du fond */
+    border:2px solid rgb(49, 104, 98);/* Une bordure d'épésseur 2px de type solid
+                                        (trait direct) avec une couler */
+    color:white; /* Coleur de poile */ 
+    font-size: large;/* taille de police */
+    font-weight: bold; /* Mode de police en gras */
+    text-align: center; /* texte centré */
+    padding: 15px 25px 15px 25px ;/* Un padding des 4 coté : top, bottom,left,
+                                  right; */
+}
+
+.entete_table_djamila{
+  /*** Parreil que la précedente avec des données spécifique aux tables
+   de djamila*/
+    background-color:rgba(30, 139, 195, 1);
+    border:2px solid rgba(34, 49, 63, 1);
+    color:white;
+    font-size: large;
+    font-weight: bold;
+    text-align: center; 
+    padding: 15px 25px 15px 25px ;
+}
+.entete_table_hassiba{
+  /*** Parreil que la précedente avec des données spécifique aux tables
+   de hassiba*/
+    background-color:  #875F9A;
+    border:2px solid #5B3256;
+    color:white;
+    font-size: large;
+    font-weight: bold;
+    text-align: center; 
+    padding: 15px 25px 15px 25px ;
+}
+
+.cellule_table{
+   /*** Cellule de table ***/
+    background-color:rgba(49, 104, 98,0.2);/* Couleur du fond rgba avec 
+                                            une opacité 0.2 */ 
+    border:2px solid rgba(49, 104, 98,0.4);/* Bordure de chaque cellule */
+    color:rgb(49, 104, 98);
+    font-size: large;
+    font-weight: bold;
+    text-align: center; 
+    padding: 15px 40px 15px 40px ;
+}
+.cellule_table_djamila{
+    /*** Redéfinition de quelque propriété de la cellule des tables djamila
+         pour des spécification a cette derniére 
+    ***/
+    background-color: rgba(228, 241, 254, 1);
+    border:2px solid #044F67;
+    color:#003171;
+}
+.cellule_table_hassiba{
+    /*** Redéfinition de quelque propriété de la cellule de la table djamila
+         pour des spécification a cette derniére  ***/
+    background-color: #ECF0F1;
+    border:2px solid #5B3256;
+    color: #5B3256;
+}
+
+#table_hommage{
+    /*** Définition d'un margin top pour cette table (il existe uen seule table de 
+    ce type pour cela nous avons fait un ID**/
+    margin-top: -15px;
+}
+
+.cellule_contenu{
+    /*** CSS du contenu de la celulle d'un tableau ***/
+    color:#111;/* Couleur de la police  */
+    font-size: medium;/* Taille de la police = moyenne*/
+    text-align: left;/* Alignement a gauche du text  */
+}
+
+.biblio-contenu {
+    box-sizing: border-box;/*Les propriétés width et height incluent 
+                           le contenu, le remplissage (padding), la bordure, */
+    float: left; /*   afin d'aligné les div de la class biblio-contenu a gauche
+                   de div de la class biblio-menu*/
+} 
+
+.biblio-contenu div {
+     /* Les différente div divéregent de la class biblio-contenu aurant le
+      meme padding  */ 
+    padding : 0.2% 1%;
+}
+
+.cel-img-bouhired-hirak img{
+   /* Spécification de la taille de l'image */
+    width : 100%;
+}
+
+#Images-hirak{
+    border-collapse: separate;/* Les bordures du tableau sont séparées */
+    border-spacing: 5px;/* la taille d'espace de séparation des bordure */
+}
+
+p{
+    text-indent: 30px;/*la longueur qui doit être laissée avant le début
+                         de la première ligne d'un élément contenant du texte.*/
+}
+
+#hirak-avril{
+    margin : 0 auto ;/* un margin top et bottom null et left et right auto */
+    width : 60%;/* Ce div ne prend pas tout l'espace ( la largeur)*/
+}
+
+.biblio-contenu p ul{
+    /*** Toute ul dans les paragraphe de la partie contenu de la bibliographie
+    auront une police de taille large ***/
+    font-size: large ; 
+}
+
+#paroles-Djamila div {
+    /* CSS spécifié a la partie des paroles de djamila bouhired, tel que 
+    les différente div divéregent de ce ID aurant le meme padding top et 
+    bottom */ 
+    padding-top : 0.2% ;
+    padding-bottom: 0.2% ;
+}
+
+.biblio-centenu q{
+    /* Toute citation intégré dans un élément contenant la class
+     biblio-contenu on lui affecte display:block, dans le but 
+     d'avoir un comportement de block car par défaut comportement 
+     de q est inline*/
+    display: block;
+}
+
+/******* Cette partie du CSS est référencié de OPEN Classroooms  lien : https://jsfiddle.net/8an8n066/1/ ******/
+.Images-hirak td {
+    width: 396px;
+    height: 128px;
+    border: 2px solid #000;
+    border-radius: 0 32px;
+    position: relative;
+    margin: 0 auto;
+}
+.Images-hirak td:after {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background: #fff;
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+/*****************************************************************/

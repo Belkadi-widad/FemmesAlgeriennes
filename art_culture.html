@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/Acceuil.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Axe.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Profil.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Art.css">
+	<title>Art et culture</title>
+	<link rel = "icon" type = "image/png" href = "Images/algerie.png" />
+</head>
+<body class="contenu">
+			<!---------------------   Entete de la page   -------------------------->
+
+	<header class="header"> 
+						<!------------------  Partie logo et nom de site  ------------------>
+		<div class="div-header">
+			<img src="Images/icon.jpg" id="logo" alt="logo" >
+			<h1 class="h1-acceuil"> Art et culture </h1>
+		</div>
+				<!--  Un navigateur permettant d'aller vers les autres page (raccourcis) -->
+
+		<nav class="nav-header" >			
+		 <!-- Le sous menu est sous forme d'un dropdown contenant une liste (ul li) des différente liens vers les autres page (a)-->	
+ 			<label class="dropdown" >
+ 			   <div class="dd-button">
+   				 <img src="Images/menu.png" alt="menu icon" >
+  			   </div>
+  			     <!-- Utilisation d'un checkbox clickable, lors de son check la liste déroulante s'affiche ou se réduit -->
+  			   <input type="checkbox" class="dd-input" id="test">
+		  	   <ul class="dd-menu">
+    				<li><a href="./histoire.html">Histoire</a></li>
+    				<li><a href="./art_culture.html">Art et culture</a></li>
+    				<li><a href="./sport.html">Sport</a></li>
+    				<li class="divider"></li>
+    				<li><a href="./projet.html">Accueil</a></li>
+  			   </ul>
+  		   </label>
+		</nav> 
+	  </header>
+	   	<!-- Cette page est un  peu différente des 2 autres : sport et histoire .Cepandant , nous souhaitions changer un peu 	vu le théme "art" . Cet article , comprend un header (l'axe ) puis un nav fixe amenant vers  ces 3 sections par domaine  :  
+	   		*1 ére section  :une section Litérature  qui  elle meme se compose de 2 section = 2 personnages : Assia Djebar et Maissa Bey 
+	   		* 2eme section : une section Dessin qui elle meme se compose de 2 section = 2 personnage dessinatrices : Bel Bahar et Daiffa 
+	   		*3 éme section : une section Galerie qui regroupe les oeuvres d'arts des artistes algériennes 
+	   		  -->
+
+	<article >
+			<!-- La balise article contient le contenu principale de la page Art  -->
+			<!-- La balise header  contient l'axe de temps  -->
+
+		<header >
+
+			<div class="axe-global">
+						    <!-- Le rectangle de l'axe -->	
+								 <!-- Définition des 3 périodes Passé puis présent  et aprés vers le futur -->
+
+				<a href="#" class="axe-temp axe-passé" style="border-left:1.5px solid black;">
+					<strong>Passé</strong>	<!-- La définition du style a été faite ici dans le but d'écrasé le style ayant tout a appartenant a la class axe-global car tout les balise a agissent de la meme manière -->
+				</a>
+				<a href="#" class="axe-temp axe-présent">
+					<strong>Présent</strong>
+				</a>		
+				<a href="#" class="axe-temp axe-futur">
+					<strong>Aujourd'hui </strong>
+				</a>		
+			</div>
+						<!-- La partie des étiquettes de personnages appartenant a chaque période de l'axe du temp -->
+
+			<div  class="barres-cartes">
+								<!-- La partie liaison entre les div définisson les périodes et les étiquettes des personnages -->
+
+				<div class="barres">
+					<div class="bare bare-right-art">
+					</div>
+					<div class="bare bare-middle-right-art">
+					</div>
+					<div class="bare bare-middle-art">
+					</div>
+					<div class="bare bare-left-art">
+					</div>
+				</div>
+				<div class="cartes">
+									<!-- Cette partie représente les étiquettes de chaque personnage sous forme d'un lien vers leur bibliographie -->
+
+					<a href="#Assia" class="carte-per carte-right-art">
+						<strong>Assia Djebar  </strong>	
+					</a>
+					<a href="#Souhila" class="carte-per carte-middle-right-art">
+					    <strong> Souhila  Bel Bahar</strong>
+                    </a>
+					<a href="#Maissa" class="carte-per carte-middle-art">
+						<strong>Maïssa Bey </strong>
+					</a>
+                    <a href="#Daiffa" class="carte-per carte-left-art">
+					    <strong> Daiffa </strong>
+                    </a>
+		       </div>
+            </div>
+            			<!-- Le triangle  de l'axe -->	
+
+	    <div class="triangle-right"></div>
+	</header>
+           
+           <!-- Le nav  fixe circulant de la page art  avec des icons : littérature , dessin puis galerie  -->	
+
+	 <nav class="nav-vertical">
+	 	<ul class="list-icon">
+    				<li><a href="#litterature"><img src="./Images/icons8-literature-96.png" class="icon-menu" alt="icon litérature "></a></li>
+    				<li><a href="#dessin"><img src="./Images/icons8-art-prices-96.png" class="icon-menu" alt="icon dessin " ></a></li>
+    				<li><a href="#photos"><img src="./Images/icons8-google-photos-512.png" alt="icon gelerie " class="icon-menu" ></a></li>
+  			   </ul>
+
+	 </nav>
+	     <!-- Le triangle  de l'axe -->	
+
+	<div class="main">
+			     <!-- Le main  représente touuute les secrtions  , le div ici fait le role d'un groupement pour le style de la page   -->	
+	    
+
+		<div id="litterature" class="entete_type_oeuvre entete_domaine entete_domaine_littérature">
+			Littérature   <!-- Ce div  est la carte ou il est écrit le nom du domaine  -->	
+		</div>
+		 <!-- ******************** Section Littérature ************************* -->	
+	<section class="corp_domaine">
+				 <!-- ******************** Section Assia Djebar  ************************* -->	
+
+		<section id="Assia" class="carte-biblio-art">
+					 <!-- ******************** La bibliographie d'assia  ************************* -->	
+
+		<div class="biblio">
+					 <!-- ******************** La photo de assia    ************************* -->	
+
+			<div class="biblio-menu-art personnage-art" >
+				<figure  class="figure-menu">
+					<img  src="Images/Assia-Djebar1.jpg" alt="Assia Djebar"  class="img-menu figure_personnage">
+					<figcaption> </figcaption>
+				</figure>	
+			</div>
+					 <!-- ******************** Le contenu  de la bibliographie  ************************* -->	
+
+			<div class="biblio-contenu">
+									 <!-- ******************** Suite de  p décrivant  Le personnage briéveemnt   ************************* -->	
+
+				<h2 class="nom_personnage">Assia Djebar ( آسيا جبار )</h2>
+				<p>
+					Assia Djebbar (pseudonyme de Fatma Zohra Imalayene) est née le 30 juin 1936 à Cherchell. Elle s’est éteinte le 6 février 2015 à Paris, en France. Elle grandit dans une famille de petite bourgeoisie traditionnelle algérienne. Son père était instituteur issu de l’École Normale de Bouzeareh, ce qui était rare à l’époque.Elle passa son enfance à Mouzaïaville (Mitidja). Elle rejoint l’École Normale Supérieure de Sèvres (France). Elle est la première femme musulmane et la première Algérienne à être admise.
+				</p>
+				<p>
+					Son premier roman <em><strong>La Soif</strong></em> parut en 1957, suivi en 1958 par <em><strong>Les Impatients.</strong></em>
+				</p>
+				<!-- ******************** Les cartes voisines décrivant  les oeuvres , réalisation .. du personnage  ************************* -->	
+
+				<div class="entete_type_oeuvre type1_entete">
+					Œuvres principales
+				</div>
+					<!-- ******************** Premiére carte : les oeuvres   ************************* -->	
+
+				<div class="corp_liste_oeuvre type1_corp">
+					<ul>
+						<li>Le Blanc de l’Algérie, récit (1996)</li>
+						<li>Oran-langue morte (1997)</li>
+						<li>Nulle part dans la maison de mon père, roman (2007)</li>
+					</ul>
+				</div>
+									<!-- ******************** Premiére carte : les films    ************************* -->	
+
+				<div class="entete_type_oeuvre type2_entete">
+					Filmographie
+				</div>
+				<div class="corp_liste_oeuvre type2_corp">
+					<ul >
+								<li>La Nouba des femmes du Mont Chenoua (1978)</li>
+								<li>La Zerda ou les chants de l’oubli (1982)</li>
+								<li>Filles d’Ismael dans le vent et la tempête –Drame musical en 5 actes (2002)</li>
+							</ul>
+				</div>
+									<!-- ******************** Premiére carte : les prix    ************************* -->	
+
+				<div class="entete_type_oeuvre type3_entete">
+					Prix littéraires
+				</div>
+				<div class="corp_liste_oeuvre type3_corp">
+					<ul>
+								<li>Prix Liberatur de Francfort, 1989 (Allemagne)</li>
+								<li>International Literary Neustadt Prize, 1996 (États-Unis)</li>
+								<li>Prix international Grinzane Cavour pour la lecture, 2006 (Turin, Italie).</li>
+								
+							</ul>
+				</div>
+			
+				<br>
+			  </div>
+			</div>
+							 <!-- ******************** Fin Section Assia Djebar  ************************* -->	
+
+		</section>
+		<br>
+						 <!-- ******************** Section Maissa  Bey   ************************* -->	
+
+ 		<section id="Maissa" class="carte-biblio-art">
+ 							 <!-- ******************** Bibliographie  Maissa  Bey  ************************* -->	
+
+		<div class="biblio">
+							 <!-- ******************** Photo  Maissa  Bey  ************************* -->	
+
+			<div class="biblio-menu-art personnage-art" >
+				<figure  class="figure-menu">
+					<img  src="Images/Maissa_Bey.jpg" alt="Maissa Bey"  class="img-menu figure_personnage">
+					<figcaption> </figcaption>
+				</figure>	
+			</div>
+							 <!-- ******************** Contenu de la biblio d' Maissa  Bey  ************************* -->	
+
+			<div class="biblio-contenu">
+				<h2 class="nom_personnage">Maïssa Bey ( ميساء باي)</h2>
+				<p>Maïssa Bey, nom de plume de Samia Benameur, née en 1950 à Ksar el Boukhari (Algérie), suit des études universitaires de lettres à Alger puis elle enseigne le français à Sidi-Bel-Abbès dans l'ouest algérien.
+				</p>
+				
+				<p>
+				Maïssa Bey est co-fondatrice des éditions Chèvre-feuille étoilée où elle dirige la collection Les chants de Nidaba et de la revue “Etoiles d’Encre ”. Elle est fondatrice et présidente de l’association de femmes « Paroles et écriture », qui a créé en 2005 une bibliothèque à Sidi-Bel-Abbès.
+				</p>
+				<p>Maissa Bey est l'une des figures de l'écriture féministe qui s'est intéressée à la situation de la femme algérienne depuis les années noires en Algérie. Elle incarne un personnage féminin social dans ses écrits où elle incite les femmes par le biais de l'écriture a revendiquer leurs droits et de s'assumer dans une société patriarcale. </p>
+								 <!-- ******************** les cartes voisines des réalistions d' Maissa  Bey  ************************* -->	
+
+				<div class="entete_type_oeuvre type1_entete">
+					Œuvres principales
+				</div>
+				<div class="corp_liste_oeuvre type1_corp">
+					<ul >
+								<li>Au commencement était la mer, roman (1996)</li>
+								<li>Nouvelles d'Algérie, nouvelle (1998)</li>
+								<li>Entendez-vous dans les montagnes, roman (2002)</li>
+								<li>Hizya , roman (2015)</li>
+								<li>Sahara, mon amour , poésie (2005) </li>
+							</ul>
+				</div>
+				<div class="entete_type_oeuvre type2_entete">
+						Théâtre
+					</div>
+				<div class="corp_liste_oeuvre type2_corp">
+							<ul >
+								<li>Tu vois c'que j'veux dire ?,  (2013)</li>
+								<li>On dirait qu'elle danse,  (2014)</li>
+								<li>Chaque pas que fait le soleil, (2015)</li>
+							</ul>
+					</div>
+				<div class="entete_type_oeuvre type3_entete">
+						Prix littéraires
+				</div>
+				<div class="corp_liste_oeuvre type3_corp">
+					<ul  >
+								<li>Grand Prix de la nouvelle de la Société des gens de lettres 1998</li>
+								<li>Prix Marguerite Audoux 2001</li>
+								<li>Prix Cybèle 2005</li>
+								<li>Grand Prix du roman francophone SILA 2008,</li>
+								<li>Prix de l'Afrique Méditerranée/Maghreb 2010</li>
+								
+								
+							</ul>
+					</div>
+	
+				<br>
+			  </div>
+			</div>
+							 <!-- ******************** Fin section  Maissa  Bey ************************* -->	
+
+		</section>
+		<br>
+				 <!-- ******************** Fin Section Littérature   ************************* -->	
+
+	</section>
+
+					 <!-- ********************  Section Dessin    ************************* -->	
+
+				 <!-- ********************  Div de l'étiquette DESSIN     ************************* -->	
+
+	<div id="dessin" class="entete_type_oeuvre entete_domaine entete_domaine_dessin">
+			Dessin 
+		</div>
+	<section  class="corp_domaine">
+						 <!-- ******************** Section Souhila bel bahar     ************************* -->	
+
+		<section id="Souhila" class="carte-biblio-art">
+			<div class="biblio">
+						<!-- ******************** Photo  Souhila bel bahar     ************************* -->	
+
+			<div class="biblio-menu-art personnage-art" >
+				<figure  class="figure-menu">
+					<img  src="Images/belbahar.jpg" alt="Souhila Bel bahar"  class="img-menu figure_personnage">
+					<figcaption> </figcaption>
+				</figure>	
+			</div>
+				<!-- ******************** Contenu de le biblio de   Souhila bel bahar     ************************* -->	
+
+			<div class="biblio-contenu">
+				<h2 class="nom_personnage">Souhila Bel Bahar (سهيلة بلبهار)</h2>
+			<div class="bref-biblio">
+				<p>
+					Souhila Bel Bahar, née le 17 février 1934 à Blida (Algérie) est une <strong>artiste peintre</strong> membre de l'Union nationale des arts plastiques et exerçant en Algérie.
+
+					Auteure d'un timbre pour l'année internationale de l'enfance en 1979, elle est sélectionnée par l'Unicef pour la publication d'une carte de vœux intitulée Hommage à nos mères en 1983. Elle est aujourd'hui considérée comme une des doyennes et co-fondatrices de l'art algérien contemporain. 
+				</p>
+				<p> 
+					Elle expose dans de nombreuses galeries, aussi bien en Algérie qu'à l’étranger. Ses œuvres figurent parmi les expositions permanentes du Musée national des beaux-arts d'Alger et du Musée Dinet de Bou Saâda en Algérie.
+				</p>
+					
+				<p>
+					Auteure d'affiches pour l'Union nationale des femmes algériennes (UNFA), elle a été primée à de nombreuses reprises1.
+
+					En 1984 et en 2001, <em>le Musée national des beaux-arts d'Alger</em> lui consacre une rétrospective. Le Ministère de la Culture l'a honorée en 2009.
+				</p>
+			</div>	
+					<!-- ******************** Les réalisations  Souhila bel bahar  dans les 3 trois boittes voisines     ************************* -->	
+
+					<div class="entete_type_oeuvre type1_entete">
+						Réalisation
+					</div>
+						<div class="corp_liste_oeuvre type1_corp">
+							<ul >
+								<li > Timbre « Année internationale de l’enfance »,<br> Ministère des postes et télécommunications 1979 </li>
+								<li>  Film « Femme du siècle » (2000)</li>
+								<li>Nombreuses affiches pour<br> divers Congrès et associations</li>
+							</ul>
+						</div>
+						<div class="entete_type_oeuvre type2_entete">
+	
+							Expositions personnelles 
+						</div>
+						<div class="corp_liste_oeuvre type2_corp">
+						
+						<ul>
+								<li> « Eternelle mémoire », Les copains d’abord, Centre Culturel de la radio. 2009 , Alger. </li>
+								<li> <em>« Instant présent »<br> </em>(Exclusivement de peintures en encre de chine et rupestres). <br>Centre Culturel Français. 2012 , Alger
+								</li>
+								<li> <em>« Mélomanie Picturale »</em> <br>Galerie El Yasmine. 2015 , Alger.</li>
+							</ul>
+
+						</div>
+						<div class="entete_type_oeuvre type3_entete">
+									Expositions collectives 
+						</div>
+						<div class="corp_liste_oeuvre type3_corp">
+							<ul >
+				
+								<li>1975 : 8 mars, Galerie des<br> Quatre Colonnes. Alger.
+								</li>
+								<li>1992 : Exposition Universelle. <br> Séville. Espagne.</li>
+								<li>1994 : Exposition Galerie <br> Etienne Dinet. Paris.</li>
+								<li>2016 : « Regards Intemporels »,<br> Seen Gallery. Alger.</li>
+
+							</ul>
+						</div>
+				
+				
+					<br>
+			</div>
+			</div>
+						<!-- ******************** Fin  Section Souhila bel bahar     ************************* -->	
+
+		</section>
+		<br>
+								<!-- ********************  Section Daiffa     ************************* -->	
+
+		<section id="Daiffa" class="carte-biblio-art" style="margin-bottom: 20px;">
+					<!-- La balise style ici nous a été obligé car c 'est un comportement spécifique à la dérniére  -->	
+
+			<div class="biblio">
+						<!-- ********************  Photo Section Daiffa     ************************* -->	
+
+			<div class="biblio-menu-art personnage-art" >
+				<figure  class="figure-menu">
+					<img  src="Images/Daiffa.jpg" alt="Daiffa"  class="img-menu figure_personnage">
+					<figcaption> </figcaption>
+				</figure>	
+			</div>
+							<!-- ********************  Biblio de  Daiffa     ************************* -->	
+
+			<div class="biblio-contenu">
+				<h2 class="nom_personnage">Daiffa (ضيفة)</h2>
+			<div class="bref-biblio">
+				<p>
+					Daiffa est l'une des <strong> rares  dessinatrices </strong> connues, dans le monde arabe, à s’être lancée en autodidacte, dans le dessin de presse.
+
+				</p>
+				<p> 
+					Ses dessins témoignent de la vitalité de la lutte des femmes en Algérie et d'un humour féroce, dans des circonstances difficiles.
+				</p>
+					
+				<p>
+					Daiffa grandit dans un milieu conservateur qui ne reconnaît d'autre voie aux femmes que celles de mères et de femmes au foyer. Dès le début, son entourage, considère d'un mauvais œil ses "crayonnages" qu'il considère comme une perte de temps. Daiffa finira par se plier au sort réservé aux filles de son entourage. Mais le goût du crayonnage la reprendra, des années plus tard, ce qui la poussera à se remettre au dessin et à l’écriture, à l'insu de ses proches. Elle ira même jusqu'à s'inscrire et à passer des examens, toujours en cachette. Cela lui permettra, des années plus tard, de travailler en tant qu'enseignante, et à collaborer, dans divers journaux de presse écrite Algériens, comme rédactrice puis comme dessinatrice de presse.
+				</p>
+				<p>
+					Daiffa demeure l’une des rares dessinatrices, connue, non seulement en <strong>Algérie</strong> mais également au <strong>Maghreb et dans le monde arabe</strong>. Ses dessins traitent en grande partie, de la condition de la femme en général, et de la femme algérienne en particulier.
+				</p>
+			</div>	
+						<!-- ********************  les 3 boites  décrivant : participations , Expositions , albums et magazines de  Daiffa     ************************* -->	
+
+				
+					<div class="entete_type_oeuvre type1_entete">
+						Participation 
+					</div>
+						<div class="corp_liste_oeuvre type1_corp">
+							<ul >
+								<li > Elle a  rejoint, pendant plusieurs années, le mouvement associatif féminin Algérien . </li>
+								<li> Elle a participé à 10 éme édition du Forum de <em> RAJ </em> . </li>
+							</ul>
+						</div>
+						<div class="entete_type_oeuvre type2_entete">
+	
+							Expositions  
+						</div>
+						<div class="corp_liste_oeuvre type2_corp">
+						
+						<ul>
+								<li> Expo de dessins de DAIFFA , Atelier-Galerie Denys Eustace , Paris .   </li>
+								<li> Elle a exposé des dessins en mars 2004 au centre culturel la Clef à Paris.
+								</li>
+								<li>Salon des dessinatrices Arabes </li>
+								<li>Festival Internationnal de la BDD , Alger .  </li>
+								<li>Maghreb des livres , à Paris .  </li>
+
+						</ul>
+
+						</div>
+						
+						<div class="entete_type_oeuvre type3_entete">
+	
+							Albums et Magazines 						
+						</div>
+						<div class="corp_liste_oeuvre type3_corp">
+						
+						<ul>
+								<li>  <em> "Agenda illustré" </em> , Ed. Lamalife, 1991
+   									</li>
+								<li> <em> "L’Algérie des femmes" </em> , 1994
+
+								</li>
+								<li> <em>"Vive la démocratie"</em> , 1997
+								</li>
+								<li> Nombreux dessins dans la presse algérienne d’opposition
+
+								</li>
+
+						</ul>
+
+						</div>
+				
+					<br>
+			</div>
+			</div>
+				<!-- ********************  Fin Section Daifa  ************************* -->	
+
+		</section>
+							<!-- ********************  Fin Section Dessin  ************************* -->	
+
+	</section>
+	
+	<!--La galerie est representé par des petites cartes qui seront agrandis en cliquant sur chacune -->
+
+	<!-- inspiré par le tutoriel de :  https://codepen.io/kevinpowell/pen/LgMLao -->
+
+		<div id="photos" class="entete_type_oeuvre entete_domaine entete_domaine_galerie">
+			Galerie 
+		</div>
+
+	<section class="corp_domaine" > 
+		<section id="album" class="carte-biblio-art">
+		
+		<!--la classe portfolio contient des div potfolio__item chacune porte une photo avec son titre et un lien vers le id du div de la photo agrandie  --> 
+
+		
+		<div class="portfolio">
+
+ 			<div class="portfolio__item">
+ 			  <a href="#portfolio-item-1"	>
+ 		   	  		<img src="Images/Portfolio/Assia1.jpeg" alt="Quelques ouvrages  de Assia Djebbar" class="portfolio__image">
+ 		      		<h3 class="portfolio__title">Quelques ouvrages<br> de Assia Djebbar</h3>
+     		  </a> 
+ 			 </div>
+
+ 			<div class="portfolio__item">
+ 			  <a href="#portfolio-item-2"	>
+ 		   			<img src="Images/Portfolio/Assia2.jpg" alt="film de Assia Djebbar" class="portfolio__image">
+ 		   			<h3 class="portfolio__title">Photo du film de Assia Djebbar<br>La Nouba des femmes du Mont Chenoua (1978)</h3>
+     			</a> 
+ 			 </div>
+
+			 <div class="portfolio__item">
+ 			 	 <a href="#portfolio-item-3"	>
+ 		   				<img src="Images/Portfolio/Assia4.jpg" alt="Assia Djebar reçue à l'Académie française" class="portfolio__image">
+ 		  				 <h3 class="portfolio__title">Assia Djebar reçue à l'Académie française<br> de Paris le 22 juin 2006</h3>
+     			</a> 
+ 			 </div>
+
+ 			 <div class="portfolio__item">
+ 			  			<a href="#portfolio-item-4"	>
+ 		  					<img src="Images/Portfolio/Maissa1.jpg" alt="Le roman de Maissa Bey" class="portfolio__image">
+ 		   					<h3 class="portfolio__title">Le roman de Maissa Bey 'Hizya'</h3>
+     					</a> 
+ 			 </div>
+			
+			<div class="portfolio__item">
+ 			  		<a href="#portfolio-item-5"	>
+ 		   				<img src="Images/Portfolio/Daiffa1.jpg" alt="Un caricature de Daiffa" class="portfolio__image">
+ 		   				<h3 class="portfolio__title">Un caricature de Daiffa<br>"Le chaperon"</h3>
+     				</a> 
+ 			 </div>
+
+ 			 <div class="portfolio__item">
+ 			  		<a href="#portfolio-item-6"	>
+ 		   				<img src="Images/Portfolio/Daiffa2.jpg" alt=">Un caricature de Daiffa" class="portfolio__image">
+ 		  				 <h3 class="portfolio__title">Un caricature de Daiffa</h3>
+     				</a> 
+ 			 </div>
+
+ 			  <div class="portfolio__item">
+ 			  		<a href="#portfolio-item-7"	>
+ 		   				<img src="Images/Portfolio/Daiffa3.jpg" alt="Un caricature de Daiffa" class="portfolio__image">
+ 		   				<h3 class="portfolio__title">Un caricature de Daiffa<br>sur les droits des femmes</h3>
+     				</a> 
+ 			 </div>
+
+ 			 <div class="portfolio__item">
+ 			  		<a href="#portfolio-item-8"	>
+ 		   				<img src="Images/Portfolio/Souhila1.jpg" alt="Un tableau de Souhila Bel Bahar" class="portfolio__image">
+ 		  				 <h3 class="portfolio__title">Un tableau de Souhila Bel Bahar<br>"Femme pétales"</h3>
+     				</a> 
+ 			 </div>
+
+ 			 <div class="portfolio__item">
+ 			  		<a href="#portfolio-item-9"	>
+ 		   				<img src="Images/Portfolio/Souhila2.jpg" alt="Un tableau de Souhila Bel Bahar" class="portfolio__image">
+ 		   				<h3 class="portfolio__title">Un tableau de Souhila Bel Bahar<br>"La Marche Turque de Mozart"</h3>
+     				</a> 
+ 			 </div>
+
+ 			  <div class="portfolio__item">
+ 			  		<a href="#portfolio-item-10"	>
+ 		   				<img src="Images/Portfolio/Souhila3.jpg" alt="Un tableau de Souhila Bel Bahar" class="portfolio__image">
+ 		   				<h3 class="portfolio__title">Un tableau de Souhila Bel Bahar<br>"Le Paradis sous les talons des Mères"</h3>
+     				</a> 
+ 			 </div>
+
+ 			   <div class="portfolio__item">
+ 			  		<a href="#portfolio-item-11"	>
+ 		  				 <img src="Images/Portfolio/Souraya2.png" alt="Un tableau de Souraya Habes" class="portfolio__image">
+ 		  				 <h3 class="portfolio__title">Un tableau de Souraya Habes</h3>
+     				</a> 
+ 			 	</div>
+
+ 			   <div class="portfolio__item">
+ 			  		<a href="#portfolio-item-12"	>
+ 		    			<img src="Images/Portfolio/Souraya3.png" alt="Un tableau de Souraya Habes" class="portfolio__image">
+ 		   				<h3 class="portfolio__title">Un tableau de Souraya Habes</h3>
+     				</a> 
+ 			 	</div>
+
+  	
+			</div>
+<!--Les div portfolio-lightbox : chacune contient une version agrandi d'une photo de la galerie avec son titre 
+ et un lien de retour 'close' pour la fermer-->
+
+		<div class="portfolio-lightbox" id="portfolio-item-1">
+			  <div class="portfolio-lightbox__content">
+  				<a href="#portfolio" class="close"></a> 
+  				<img class="portfolio-lightbox__image" src="Images/Portfolio/Assia1.jpeg" alt="Ouvrages assia djebar">
+  				<h3 class="portfolio__title">Quelques ouvrages de Assia Djebbar</h3>
+  			</div>
+		</div> 
+
+
+		<div class="portfolio-lightbox" id="portfolio-item-2">
+ 			 <div class="portfolio-lightbox__content">
+  			 <a href="#portfolio" class="close"></a> 
+ 			 <img class="portfolio-lightbox__image" src="Images/Portfolio/Assia2.jpg" alt="La Nouba des femmes du Mont Chenoua">
+ 			 <h3 class="portfolio__title">Photo du film de Assia Djebbar : La Nouba des femmes du Mont Chenoua (1978)</h3>
+  			</div>
+		</div> 
+
+		<div class="portfolio-lightbox" id="portfolio-item-3">
+ 		 <div class="portfolio-lightbox__content">
+ 			 <a href="#portfolio" class="close"></a> 
+  			<img class="portfolio-lightbox__image" src="Images/Portfolio/Assia4.jpg" alt="A l'Académie française de Paris">
+  			<h3 class="portfolio__title">Assia Djebar reçue à l'Académie française de Paris le 22 juin 2006.</h3>
+  			</div>
+		</div> 
+
+	<div class="portfolio-lightbox" id="portfolio-item-4">
+  		<div class="portfolio-lightbox__content">
+  			<a href="#portfolio" class="close"></a> 
+  			<img class="portfolio-lightbox__image" src="Images/Portfolio/Maissa1.jpg" alt="Le roman de Maissa Bey">
+ 			 <h3 class="portfolio__title">Le roman de Maissa Bey 'Hizya'</h3>
+  		</div>
+	</div> 
+
+	<div class="portfolio-lightbox" id="portfolio-item-5">
+  		<div class="portfolio-lightbox__content">
+  			<a href="#portfolio" class="close"></a> 
+  			<img class="portfolio-lightbox__image" src="Images/Portfolio/Daiffa1.jpg" alt="Un caricature de Daiffa">
+  			<h3 class="portfolio__title">Un caricature de Daiffa<br>"Le chaperon"</h3>
+  		</div>
+	</div> 
+
+	<div class="portfolio-lightbox" id="portfolio-item-6">
+  		<div class="portfolio-lightbox__content">
+  			<a href="#portfolio" class="close"></a> 
+  			<img class="portfolio-lightbox__image" src="Images/Portfolio/Daiffa2.jpg" alt="Un caricature de Daiffa">
+  			<h3 class="portfolio__title">Un caricature de Daiffa</h3>
+  		</div>
+	</div> 
+
+	<div class="portfolio-lightbox" id="portfolio-item-7">
+  		<div class="portfolio-lightbox__content">
+  			<a href="#portfolio" class="close"></a> 
+  			<img class="portfolio-lightbox__image" src="Images/Portfolio/Daiffa3.jpg" alt="Un caricature de Daiffa">
+  			<h3 class="portfolio__title">Un caricature de Daiffa<br>sur les droits des femmes</h3>
+  		</div>
+	</div> 
+
+	<div class="portfolio-lightbox" id="portfolio-item-8">
+  		<div class="portfolio-lightbox__content">
+  			<a href="#portfolio" class="close"></a> 
+  			<img class="portfolio-lightbox__image" src="Images/Portfolio/Souhila1.jpg" alt="Un tableau de Souhila Bel Bahar">
+  			<h3 class="portfolio__title">Un tableau de Souhila Bel Bahar<br>"Femme Pétales"</h3>
+  		</div>
+	</div> 
+
+	<div class="portfolio-lightbox" id="portfolio-item-9">
+  		<div class="portfolio-lightbox__content">
+  			<a href="#portfolio" class="close"></a> 
+  			<img class="portfolio-lightbox__image" src="Images/Portfolio/Souhila2.jpg" alt="Un tableau de Souhila Bel Bahar">
+  			<h3 class="portfolio__title">Un tableau de Souhila Bel Bahar<br>"La Marche Turque de Mozart"</h3>
+  		</div>
+	</div> 
+
+	<div class="portfolio-lightbox" id="portfolio-item-10">
+ 		 <div class="portfolio-lightbox__content">
+  				<a href="#portfolio" class="close"></a> 
+ 				 <img class="portfolio-lightbox__image" src="Images/Portfolio/Souhila3.jpg" alt="Un tableau de Souhila Bel Bahar">
+ 				 <h3 class="portfolio__title">Un tableau de Souhila Bel Bahar<br>"Le Paradis sous les talons des Mères"</h3>
+ 		 </div>
+	</div> 
+
+	<div class="portfolio-lightbox" id="portfolio-item-11">
+  		<div class="portfolio-lightbox__content">
+  				<a href="#portfolio" class="close"></a> 
+  				<img class="portfolio-lightbox__image" src="Images/Portfolio/Souraya2.png" alt="Un tableau de Souraya Habes">
+  				<h3 class="portfolio__title">Un tableau de Souraya Habes</h3>
+  		</div>
+	</div> 
+
+	<div class="portfolio-lightbox" id="portfolio-item-12">
+  		<div class="portfolio-lightbox__content">
+  				<a href="#portfolio" class="close"></a> 
+  				<img class="portfolio-lightbox__image" src="Images/Portfolio/Souraya3.png" alt="Un tableau de Souraya Habes">
+  				<h3 class="portfolio__title">Un tableau de Souraya Habes</h3>
+  		</div>
+	</div> 
+
+
+
+
+
+				<!-- ********************  Fin Section Album   ************************* -->	
+
+</section>
+				<!-- ********************  Fin Section Galerie   ************************* -->	
+
+	</section>
+
+	</div>
+					<!-- ********************  Fin de l'article     ************************* -->	
+
+	</article>
+	<BR><BR><BR><BR><BR>
+					<!-- ********************   footer avec la citation sur la femme identique dans toutes les pages du site    ************************* -->	
+
+	<footer>
+		<q> La femme a été mise au monde pour s'arranger de tout et pour tout arranger .  </q>
+	</footer>
+</body>
+</html>

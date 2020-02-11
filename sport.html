@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/Acceuil.css"> <!-- Style de l'accueil--> 
+	<link rel="stylesheet" type="text/css" href="CSS/Axe.css"> <!-- Style de l'axe de temps -->
+	<link rel="stylesheet" type="text/css" href="CSS/Profil.css"> <!--Style des cartes bibliographiques communs entre les 3 domaines -->
+	<link rel="stylesheet" type="text/css" href="CSS/Sport.css"> <!--Style spécifique à la page sport  -->
+	<title>Sport</title>
+	<link rel = "icon" type = "image/png" href = "Images/algerie.png" />
+</head>
+<body class="contenu">
+	<!--*******************Le header ********************** -->
+	<header class="header"> 
+				<!------------------  Partie logo et nom de site  ------------------>
+
+		<div class="div-header">
+			<img src="Images/icon.jpg" id="logo" alt="logo">
+			<h1 class="h1-acceuil"> Femmes Algériennes </h1>
+		</div>
+		<nav class="nav-header" >		
+		 <!-- Le sous menu est sous forme d'un dropdown contenant une liste (ul li) des différente liens vers les autres page (a)-->		
+ 			<label class="dropdown" >
+ 			   <div class="dd-button">
+   				 <img src="Images/menu.png" alt="icon menu" >
+  			   </div>
+  			      <!-- Utilisation d'un checkbox clickable, lors de son check la liste déroulante s'affiche ou se réduit -->
+  			   <input type="checkbox" class="dd-input" id="test">
+		  	   <ul class="dd-menu">
+    				<li><a href="./histoire.html">Histoire</a></li>
+    				<li><a href="./art_culture.html">Art et culture</a></li>
+    				<li><a href="./sport.html">Sport</a></li>
+    				<li class="divider"></li>
+    				<li><a href="./projet.html">Accueil</a></li>
+  			   </ul>
+  		   </label>
+		</nav> 
+	 </header>
+	 <!--*******************L'article  ********************** -->
+
+	<article>			  
+		<!-- ************************ header qui comporte l'axe de temps **************************-->	
+		<header >
+
+			<!--******************* le rectangle de l'axe  ********************** -->
+			<div class="axe-global">
+				<!-- Définition des années de la première période de carriéres ( 1986-1990)-->
+
+				<a href="#" class="axe-temp axe-passé" style="border-left:1.5px solid black;">
+					<!-- La définition du style a été faite ici dans le but d'écrasé le style ayant tout a appartenant a la class axe-global car tout les balise a agissent de la meme manière -->
+					<strong>1986</strong>	
+					<strong style="margin-left: 50%;">1990</strong>	
+				</a>
+				<!-- Définition des années de la deuxiéme période de carriéres ( 1990-2008)-->
+
+				<a href="#" class="axe-temp axe-présent">
+
+					<strong>1990</strong>	
+					<strong style="margin-left: 50%;">2008</strong>	
+				</a>
+						<!-- Définition des années de la troisiéme  période  d'aujourdhui comme la jeune Amel Melhi -->
+
+				<a href="#" class="axe-temp axe-futur">
+					<strong>Aujourd'hui</strong>
+				</a>
+		
+			</div>
+			<!--******************* les barres et les cartes  ********************** -->
+			<div  class="barres-cartes">
+				<!--******************* les barres de l'axe qui relie les cartes et le rectangle ********************** -->
+				<div class="barres">
+					<div class="bare bare-right">
+					</div>
+					<div class="bare bare-middle">
+					</div>
+					<div class="bare bare-left ">
+					</div>
+				</div>
+					<!--******************* Les cartes des personnages de l'axe ********************** -->
+
+				<div class="cartes">
+					<a href="#Hassiba" class="carte-per carte-right">
+						<strong>Hassiba <br> Boulmerka</strong>	
+					</a>
+					<a href="#Souakri" class="carte-per carte-middle">
+						<strong>Salima Souakri </strong>
+					</a>
+                    <a href="#Amel" class="carte-per carte-left">
+					    <strong> Amel Melih</strong>
+                    </a>
+		       </div>
+            </div>
+	     <!--******************* le triangle  de l'axe  ********************** -->
+
+	     	<div class="triangle-right"></div>
+		</header>
+		<!--
+		******************* les sections de l'article : chaque section représente un personnage 
+		le modéle d'une section est identique pour les 3 personnages et il est commenté dans la premiére section
+		********************** -->
+		<!-- Chaque section contient deux partie : une partie menu et une autre pour le contenu, la partie menu elle meme est divisé en 2 partie : la figure (photo de profil de perssonage) et un menu permettant de naviguer les différentes filiale de la bibliographie-->
+
+	<!--******************* Hassiba Boulmerka  ********************** -->
+	<section id="Hassiba" class="carte-biblio">
+
+		<div class="biblio">
+			<!--******************* le menu glissant  ********************** -->
+			<div class="biblio-menu" >
+				<figure  class="figure-menu">
+					<img  src="Images/boulmer9a.jpg" alt="Hassiba Boulmerka"  class="img-menu figure_personnage">
+					<figcaption> </figcaption>
+				</figure>	
+				<nav>
+					<ul class="list_menu">
+    			 		<li>
+    			 			<a href="#Apropos-has" >A propos</a>
+    			 		</li>
+    					<li>
+    						<a href="#carriere-has">Carrière sportive</a>
+    					</li>
+    					<li >
+    						<a href="#post-cariére-has">Post Carrière</a>
+    					</li>
+    					
+    					<li>
+    						<a href="#Palmarès-has">Palmarès</a>
+    					</li>
+    					<li>
+    						<a href="#Prix-has">Quelques Prix remportés</a>
+    					</li>
+    					</ul>
+				</nav>
+			</div>
+			<!--******************* Le contenu  ********************** -->
+			<div class="biblio-contenu">
+								<!-- Nom du personnage -->
+
+				<h2 class="nom_personnage">Hassiba Boulmerka (حسيبة بولمرقة) </h2>
+				<div id="Apropos-has">
+									<!-- ********************  A propos de hassiba    ************************* -->	
+
+					<h3 class="titre-h3">1.  Carte d'identité</h3>
+					<p>
+						Hassiba Boulmerka (arabe : حسيبة بولمرقة) née le 10 juillet 1968 à Constantine, est <strong> une athlète algérienne </strong>, spécialiste des courses de demi-fond (800 mètres et 1 500 mètres). Elle est la première à apporter une médaille d'or olympique au sport algérien, médaille obtenue aux jeux de Barcelone. Elle est également double championne du monde du 1 500 m. Elle a également siégé durant une période au sein de la commission des athlètes du Comité international olympique.
+					</p>
+					<ul>
+						<!-- ********************  carte d'identité de hassiba    ************************* -->	
+
+							<li>
+								<strong>Disciplines : </strong> 800 mètres et 1500 mètres
+							</li>
+							<li>
+								<strong>Dat de naissance : </strong> 10 juillet 1968
+							</li>
+							<li>
+								<strong>Lieu de naissance :	</strong> Constantine, Algérie
+							</li>
+							<li>
+								<strong>Nationalité  : </strong>  Algérienne
+							</li>
+							<li>
+								<strong>Taille :	</strong> 	1,58 m
+
+							</li>
+							<li>
+								<strong>Entraîneur : </strong> Amar Bouras
+							</li>
+							
+					  </ul>
+				</div>
+				<div id="carriere-has">
+					<h3 class="titre-h3">2. Carrière sportive</h3>
+
+						<!-- ********************  Liste des participations de hassiba  sous forme  d'un tableau pour la bonne organisation de la page ************************* -->	
+
+						<table>
+							<tr>
+							<!-- ********************  Niveau 1 Début de carriére     ************************* -->	
+
+								<td class="axe-futur niveau">Début de carrière</td>
+								<td class="contenu_niv">
+									<p>
+										En 1986, elle découvre les compétitions internationales lors des championnat du monde de cross-country, terminant à la 80e place. Elle obtient ses premiers résultats internationaux lors des championnats d'Afrique 1988 où elle remporte l'or. Plus tard dans la saison, elle échoue sur les deux épreuves du 800 m et du 1 500 m au stade des demi-finales.
+									</p>
+								</td>
+							</tr>
+								<!-- ********************  Niveau 2 Carrière de haut niveau    ************************* -->	
+
+							<tr>
+								<td class="axe-présent niveau">Carrière de haut niveau</td>
+								<td class="contenu_niv">
+								<dl>
+									<dt>
+											1. 1989
+									</dt>
+									<dd>
+											
+										Elle est de nouveau couronnée lors des championnats d'Afrique 1989. Elle termine sa saison avec une septième place lors de la Coupe du monde des nations disputée à Barcelone.
+									</dd>
+									<dt>
+											2. 1991
+									</dt>
+									<dd>	
+										Elle se positionne parmi les meilleures spécialistes mondiales avec une victoire lors du Golden Gala de Rome. Lors des mondiaux de Tokyo, elle remporte le titre.  La victoire de Boulmerka est également symbolique : elle devient la première africaine à devenir championne du monde d'athlétisme.
+									</dd>
+									
+									<dt>
+											3. 1992
+									</dt>
+										<dd>
+											Elle connaît un début de saison  peu en rapport avec ses possibilités. Elle quitte également un stage d'entraînement .  Elle , qui est restée dans son sillage, dans les derniers 200 mètres. Elle vient d'apporter à son pays la première médaille d'or olympique de son histoire.
+										</dd>
+									<dt>
+											3. 1993
+									</dt>
+									<dd>
+										Son début de saison  est perturbé par des problèmes personnels : son père, victime d'une attaque cardiaque.
+
+									</dd>
+									<dt>
+										4.1994
+									</dt>
+									<dd>
+										Elle retrouve le haut niveau mondial , obtenant de bons résultats lors des meeting européens. En fin de saison, elle termine seconde de la Finale du Grand Prix derrière la Canadienne Angela Chalmers, puis prend sa revanche la semaine suivante sur celle-ci lors de la Coupe du monde des nations de Londres .
+									</dd>
+								</dl>
+
+
+								</td>
+							</tr>
+							<!-- ********************  Niveau 3 Fin de  Carrière   ************************* -->	
+
+							<tr>
+								<td class="axe-passé niveau"> Fin de carrière</td>
+								<td class="contenu_niv">
+								<dl>
+									<dt>
+											1.1995 
+									</dt>
+									<dd>
+											
+										De nouveau, comme en 1992, sa préparation pour les mondiaux de Göteborg de 1995 n'est pas idéale. Elle termine la finale avec son meilleur temps de la saison. Sa victoire, la seule de la saison, lui offre son second titre mondial.
+									</dd>
+									<dt>
+											2. 1996
+									</dt>
+									<dd>
+																					
+										De nouveau, son début de saison 1996 est mauvais, avec des temps équivalents à ceux qu'elle réalisait en 1989. Elle se rend toutefois aux jeux d'Atlanta avec l'espoir de conserver son titre olympique. Cependant, lors de sa demi-finale, elle est victime d'un accident de course à la cloche annonçant le dernier tour : elle se retrouve privée d'une chaussure puis quitte la piste et termine non qualifiée avec une entorse à la cheville.
+									</dd>
+									
+									<dt>
+											3. 1997
+									</dt>
+									<dd>
+											Elle court encore la saison la saison 1997 mais ne défend pas son titre mondial. En 1998, année où sa mère décède, elle n'arrive plus à supporter l'entraînement et elle décide de mettre un terme à sa carrière de sportive.
+									</dd>
+								</dl>		
+							</td>
+							</tr>
+						</table>
+				</div>
+						<!-- ********************  Post Carrière de hassiba    ************************* -->	
+
+				<div id="post-cariére-has">
+					<h3 class="titre-h3"> 3. Post Carriére  </h3>
+					<p>	
+						Elle a occupé pendant une période un poste au sein de la commission des 	athlètes du Comité international olympique.
+					</p>
+
+					<p>
+						Désormais femme d'affaires, elle dirige la société Hassiba Boulmerka International qui fait l'intermédiaire entre les laboratoires pharmaceutiques et les pharmacies, la représentante exclusive de Diadora en Algérie et une entreprise de réalisation de murs-rideaux et de composite aluminium.
+					</p>
+				</div>
+							<!-- ********************  Les palmarés  de hassiba    ************************* -->	
+
+				<div  id="Palmarès-has" >
+						<h3 class="titre-h3">4.  Palmarès</h3>
+					
+					<div>
+						<p class="contenu_niv">Salima Souakri a été quinze fois championne d'Algérie et a totalisé douze titres de championne d'Afrique</p>
+						<p>Elle a été sacrée cinq fois <em><strong>« meilleure personnalité sportive en Algérie »</strong></em>
+						</p>
+						<!-- ********************  table illustrant les princaples médailles emportées par hassiba  ************************* -->	
+
+						<table>
+								<tr class="tr-separation">
+									<td class="entete_table_sport">Années</td>
+									<td class="cellule_table_sport">1988</td>
+									<td  class="cellule_table_sport" >1989</td>
+									<td class="cellule_table_sport" >1991</td>
+									<td class="cellule_table_sport" >1992</td>
+									<td class="cellule_table_sport" >1993</td>
+								</tr>
+								<tr>
+									<td class="entete_table_sport">Compétition 800m-1500m</td>
+									<td class="cellule_table_sport">Championnats d'Afrique  </td>	
+								
+									<td class="cellule_table_sport">Coupe du monde des nations </td>
+									<td class="cellule_table_sport">Championnats du monde </td>
+									<td class="cellule_table_sport">Jeux méditerranéens   </td>
+									
+									<td class="cellule_table_sport">jeux olympiques  	</td>
+
+								</tr>
+								<tr>
+									<td class="entete_table_sport">Lieu	</td>
+									<td class="cellule_table_sport range">Annaba</td>
+		
+									<td class="cellule_table_sport range">Lagos	</td>
+									<td class="cellule_table_sport range">Tokyo	</td>
+						
+									<td class="cellule_table_sport range"> Athènes		</td>
+									<td class="cellule_table_sport range"> Barcelone </td>
+								</tr>
+								<tr>
+									<td class="entete_table_sport">Médailles</td>
+									<td>
+										<img src="Images/medaille1.jpg"  alt="medaille d'or" class="medaille">
+									</td>
+									<td>
+										<img src="Images/medaille1.jpg"  alt="medaille d'or"  class="medaille">
+									</td>
+									<td>
+										<img src="Images/medaille1.jpg" alt="medaille d'or"  class="medaille">
+									</td>
+									<td>
+										<img src="Images/medaille1.jpg" alt="medaille d'or"  class="medaille" >
+									</td>
+									<td>
+										<img src="Images/medaille1.jpg" alt="medaille d'or"  class="medaille" >
+									</td>
+								</tr>
+															<tr>
+									<td class="entete_table_sport">Années</td>
+									
+									<td class="cellule_table_sport" colspan="2"> 1994</td>
+									<td class="cellule_table_sport">1995</td>
+								</tr>
+								<tr>
+								<td class="entete_table_sport">Compétition</td>
+								    
+									
+									<td class="cellule_table_sport">Finale du Grand Prix 	</td>
+									<td class="cellule_table_sport">Coupe du monde des nations </td>
+									<td class="cellule_table_sport">Championnats du monde </td>
+								</tr>
+								<tr>
+									<td class="entete_table_sport">Lieu </td>
+									
+									<td class="cellule_table_sport range"> Paris </td>
+									<td class="cellule_table_sport range"> Londres	 </td>
+		
+									<td class="cellule_table_sport range"> Göteborg	 </td>
+		
+								</tr>
+								<tr>
+									<td class="entete_table_sport">Médailles</td>
+									<td>
+										<img src="Images/medaille2.jpg" alt="medaille d'argent"  class="medaille" >
+									</td>
+									<td>
+										<img src="Images/medaille1.jpg" alt="medaille d'or"  class="medaille" >
+									</td>
+									
+									<td>
+										<img src="Images/medaille1.jpg" alt="medaille d'or"  class="medaille" >
+									</td>
+									
+								</tr>
+						
+								
+							</table>
+							<br>
+						
+						</div>
+					</div>
+					<!-- ********************  Les prix gagné  par hassiba dans sa carriére et aprés   ************************* -->	
+
+				<div id="Prix-has">
+					<h3 class="titre-h3">5.  Quelques prix remportés </h3>
+						<!-- ********************  nous avons choisis de le mettre dans une table pour obtenir une bonne structure    ************************* -->	
+
+					<table id="Images-prix-has">
+						<thead>
+							<tr>
+							<th class="entete_table_hassiba">
+								Occasion 
+							</th>
+							<th class="entete_table_hassiba">
+								Prix  
+							</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr > 
+								<td class="cel-hass-prix">
+									<dl>
+										<dt>PRIX DU SPORT DES ASTURIES 1995 </dt>
+										<dd>
+										Le jury a valorisé dans ce prix les valeurs sportives de cette athlète et les valeurs humaines qui la distinguent. Boulmerka est le représentant d'un pays et d'un monde dans lequel les installations sportives ne sont pas les plus favorables pour les femmes.
+										</dd>
+									</dl>
+								</td>
+								<td class="cel-img-prix-has">
+									<figure>
+									<img src="./Images/prix-hassiba.jpg" alt="Prix du sport des asturies  , le 8 septembre 1995.">
+										<figcaption>
+									 <em>
+								 		 Prix du sport des asturies  , le 8 septembre 1995.
+								 	</em>
+										</figcaption>
+									</figure>	
+								</td>
+							
+							</tr>
+							<tr>
+								<td class="cel-hass-prix">
+									<dl>
+										<dt> PRIX DE LA FEMME ARABE A LONDRES 2016  </dt>
+										<dd>
+											Elle a reçu le trophée de la femme arabe ayant marqué l'histoire du sport, lors d'une cérémonie à laquelle
+											ont pris part des personnalités politiques, des diplomates, dont Amar Abba, ambassadeur d'Algérie au Royaume-Uni, et des célébrités.
+										</dd>
+									</dl>
+								</td>
+								<td class="cel-img-prix-has">
+									<figure >
+									<img src="./Images/Has-prix.jpg" alt="prix de la femme arabe à Londres">
+									<figcaption>
+									 	<em>
+								 		 prix de la femme arabe à Londres , décembre 2016. 
+								 		</em>
+									</figcaption>
+									</figure>	
+								</td>
+							</tr>
+							<tr>
+								<td class="cel-hass-prix">
+									<dl>	
+										<dt> ALGERIAN OLYMPIC AND  SPORTS  AWARDS 2017 </dt>
+										<dd>
+										 	Le Comité Olympique Algérien (COA) a organisé le 26 janvier 	2017, la 3ème  édition d’Algerian Olympic and Sports Awards. Les champions olympiques du 1500 m, Hassiba Boulmerka, Nouria Benida Merah  et Nouredine Morceli ont reçu également le prix spécial pour l’ensemble de leur carrière d’athlète.
+										</dd>
+									</dl>
+								</td>
+								<td class="cel-img-prix-has">
+									<figure >
+									<img src="./Images/Hassiba-prix.png" alt="3ème édition des Algerian Olympic and Sports Awards">
+									<figcaption>
+									 	<em>
+								 		 3ème édition des Algerian Olympic and Sports Awards ,26 JANVIER 2017
+								 		</em>
+									</figcaption>
+									</figure>	
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+		<!--****************** Section  Salima Souakri  ********************** -->
+	<section id="Souakri" class="carte-biblio">
+		<!-- ********************  La biblio     ************************* -->	
+
+		<div class="biblio">
+					<!-- ********************  Le menu : photo + nav      ************************* -->	
+
+			<div class="biblio-menu" >
+				<figure  class="figure-menu">
+					<img  src="Images/salima-souakri.jpg" alt="Salima Souakri "  class="img-menu figure_personnage">
+					<figcaption> </figcaption>
+				</figure>	
+				<nav>
+					<ul class="list_menu">
+    			 		<li>
+    			 			<a href="#apropos_souakri" >A propos</a>
+    			 		</li>
+    			 		<li>
+    			 			<a href="#vie_souakri" >Vie personnelle</a>
+    			 		</li>
+    					
+    					<li>
+    						<a href="#carriere_souakri">Carrière sportive</a>
+    					</li>
+    					<li >
+    						<a href="#unicef_souakri">Engagement à l'UNICEF</a>
+    					</li>
+    					
+    					<li>
+    						<a href="#Palmarès_souakri">Palmarès</a>
+    					</li>
+    					</ul>
+				</nav>
+			</div>
+								<!-- ********************  Contenu biblio salima      ************************* -->	
+
+			<div class="biblio-contenu">
+				<h2 class="nom_personnage">Salima Souakri (سليمة سواكري)</h2>
+				<div>
+					<div  id="apropos_souakri" >
+						<h3 class="titre-h3">1.  A-propos</h3>
+					</div>
+					<div>
+								<!-- ******************** A propos salima      ************************* -->	
+						<p>
+							Salima Souakri est une judokate, entraîneure de judo et animatrice de télévision algérienne, née le 6 décembre 1974 à Bordj El Kiffan, dans la wilaya d'Alger.
+						</p>
+						<p>
+							Durant sa carrière sportive, elle a notamment été championne d'Afrique à douze reprises et a participé à quatre éditions de Jeux olympiques.
+						</p>
+						<p>
+							Depuis 2016, elle présente l'émission Iftah 9albek sur Echorouk TV.
+				    	</p>
+				    			<!-- ********************   Carte d'identité  salima : une liste      ************************* -->	
+
+						<ul>
+							<li>
+								<strong>Sport : </strong>Judo
+							</li>
+							<li>
+								<strong>Période active : </strong> 1990-2008
+							</li>
+							<li>
+								<strong>Nationalité sportive : </strong> Algérie Algérienne
+							</li>
+							<li>
+								<strong>Commandement :	</strong> Imseblen
+							</li>
+							<li>
+								<strong>Conflits : </strong> Conquête de l'Algérie par la France
+							</li>
+							<li>
+								<strong>Naissance : </strong> 6 décembre 1974 (44 ans)
+							</li>
+							<li>
+								<strong>Lieu de naissance :	</strong> Bordj El Kiffan (Algérie)
+							</li>
+							<li>
+								<strong>Poids de forme : </strong> Moins de 58 kg
+							</li>
+					   </ul>
+					</div>
+								<!-- ********************  Vie personnelle  salima      ************************* -->	
+
+					<div id="vie_souakri" >
+						<h3 class="titre-h3">2.  Vie personnelle</h3>
+					
+						<p>Sa famille est originaire de N'Gaous. Salima Souakri a cinq frères ; dans sa famille plusieurs personnes pratiquaient le judo, dont sa mère. Elle a perdu deux frères policiers dans la Guerre civile algérienne. En 1993, un de ses frères policiers est enlevé puis tué par des terroristes. Cet événement marquera de façon importante sa vie et sa carrière sportive.
+
+						Salima Souakri a épousé le footballeur algérien Billel Dziri.</p>
+								
+					</div>
+							<!-- ********************  Carriére sportive  salima  : un tableau identique au style de la section hassiba   : 3 niveaux   ************************* -->	
+
+					<div id="carriere_souakri" >
+						<h3 class="titre-h3">3.  Carrière sportive</h3>
+						<table>
+							<tr>
+								<td class="axe-futur niveau">Début de carrière</td>
+								<td class="contenu_niv">
+									<p>
+										Salima Souakri a commencé le judo dans son quartier de Bordj El Kiffan, puis elle opte pour l'Union sportive de la médina d'Alger pendant deux années avant de se retrouver au Mouloudia Club d'Alger, où elle ouvre la section féminine de judo. Sa première sélection avec l'équipe nationale d'Algérie date de 1990 lors d'un tournoi international à Béjaïa, où elle remporte la médaille d'argent de sa catégorie
+									</p>
+								</td>
+							</tr>
+							<tr>
+							<td class="axe-présent niveau">Carrière de haut niveau</td>
+							<td class="contenu_niv">
+								<dl>
+									<dt>
+											1. Jeux méditerranéens et tournoi international de Bercy
+									</dt>
+									<dd>
+											-  En 2001, elle est sacrée championne des Jeux méditerranéens se tenant à Tunis, quelques jours seulement après l'assassinat de son deuxième frère policier.
+									</dd>
+									<dd>
+											-  En 2002, elle devient la première Africaine à remporter une médaille d'or au tournoi international de Paris-Bercy. Sa victoire est sifflée par le public. Elle obtient la médaille de bronze de ce même tournoi en 2003 et en 2004. 
+									</dd>
+									<dd>
+											-  En 2005, elle subit une opération des ligaments croisés et doit observer un repos d'une année2. 
+									</dd>
+									<dd>
+											-  Elle reprend la compétition en 2006, en récupérant son titre de championne d’Algérie et celui de championne d’Afrique.
+									</dd>
+									<dt>
+											2. Olympiades
+									</dt>
+										<dd>
+											Elle participe quatre fois aux Jeux olympiques. À seulement 16 ans, elle a pris part pour la première fois à cette compétition majeure lors des Jeux de 1992 à Barcelone, où elle termine à la cinquième place. Elle participera également aux éditions de 1996, 2000 et 2004.
+										</dd>
+							
+								</dl>
+
+
+
+								
+							</tr>
+							<tr>
+								<td class="axe-passé niveau"> Fin de carrière</td>
+								<td class="contenu_niv">
+									<p>
+										Elle décide, en 2008, de mettre fin à sa carrière de sportive de haut niveau. Grâce à son expérience et son diplôme de technicien supérieur en sports, elle devient entraineur de l'équipe nationale féminine algérienne de judo d'abord. Puis, entraineur au Mouloudia d'Alger3.
+										<br>Depuis le 24 novembre 2016, elle présente l'émission Iftah 9albek sur Echorouk TV.
+									</p>
+								</td>
+							</tr>
+						</table>
+					
+					</div>
+						<!-- ********************  Engagement à l UNICEF  ************************* -->	
+
+					<div id="unicef_souakri" >
+						<h3 class="titre-h3">4.  Engagement à l'UNICEF</h3>
+					
+						<table >
+							<tr>
+								<td>
+						<p>En parallèle à son parcours de championne, Salima Souakri est depuis 2011 ambassadrice de l'UNICEF3. Elle s'implique grandement dans les actions de promotion des droits de l’enfant en Algérie4, s’implique aux côtés de mouvements associatifs et préside l'association Wafa qui aide les handicapés depuis 2007</p>
+								</td>
+							<td>
+										<figure >
+							<img  src="Images/unicef_souakri.jpg" alt="Unicef" id="unicef_souakri_img">
+							<figcaption>
+								 
+							</figcaption>
+						</figure>	
+							</td>
+							</tr>
+						</table>
+
+				
+					</div>
+						<!-- ******************** Les palmarès de salima : tableau identique à celui de la section précédente    ************************* -->	
+
+					<div  id="Palmarès_souakri" >
+						<h3 class="titre-h3">5.  Palmarès</h3>
+					
+						<div>
+						<p class="contenu_niv">Salima Souakri a été quinze fois championne d'Algérie et a totalisé douze titres de championne d'Afrique</p>
+						<p>Elle a été sacrée cinq fois <em><strong>« meilleure personnalité sportive en Algérie »</strong></em>
+						</p>
+						<table>
+								<tr class="tr-separation">
+									<td class="entete_table_sport">Années</td>
+									<td class="cellule_table_sport">2006</td>
+									<td  class="cellule_table_sport" >2004</td>
+									<td class="cellule_table_sport" >2001</td>
+									<td class="cellule_table_sport" >2000</td>
+									<td class="cellule_table_sport" >1999</td>
+								</tr>
+								<tr>
+									<td class="entete_table_sport">Compétition</td>
+									<td class="cellule_table_sport">Championnats d'Afrique</td>	
+								
+									<td class="cellule_table_sport">Championnats d'Afrique</td>
+									<td class="cellule_table_sport">Jeux méditerranéens</td>
+									
+									<td class="cellule_table_sport">Championnats d'Afrique</td>
+									<td class="cellule_table_sport">Championnats d'Afrique</td>
+
+								</tr>
+								<tr>
+									<td class="entete_table_sport">Rang</td>
+									<td class="cellule_table_sport range">1</td>
+		
+									<td class="cellule_table_sport range">1 </td>
+									<td class="cellule_table_sport range"> 1 </td>
+						
+									<td class="cellule_table_sport range"> 1 </td>
+									<td class="cellule_table_sport range"> 1 </td>
+								</tr>
+								<tr>
+									<td class="entete_table_sport">Médailles</td>
+									<td>
+										<img src="Images/medaille1.jpg" alt="medaille d'or" class="medaille">
+									</td>
+									<td>
+										<img src="Images/medaille1.jpg" alt="medaille d'or" class="medaille">
+									</td>
+									<td>
+										<img src="Images/medaille1.jpg"  alt="medaille d'or" class="medaille">
+									</td>
+									<td>
+										<img src="Images/medaille1.jpg" alt="medaille d'or" class="medaille" >
+									</td>
+									<td>
+										<img src="Images/medaille1.jpg" alt="medaille d'or" class="medaille" >
+									</td>
+								</tr>
+															<tr>
+									<td class="entete_table_sport">Années</td>
+									
+									<td class="cellule_table_sport"  colspan="2"> 1997</td>
+									<td class="cellule_table_sport">1996</td>
+									<td class="cellule_table_sport">1992</td>
+								</tr>
+								<tr>
+								<td class="entete_table_sport">Compétition</td>
+								    
+									
+									<td class="cellule_table_sport">Championnats d'Afrique</td>
+									<td class="cellule_table_sport">Jeux méditerranéens</td>
+									<td class="cellule_table_sport">Championnats d'Afrique</td>
+									<td class="cellule_table_sport">Championnats du monde junior</td>
+								</tr>
+								<tr>
+									<td class="entete_table_sport">Rang</td>
+									
+									<td class="cellule_table_sport range"> 1 </td>
+									<td class="cellule_table_sport range"> 2 </td>
+		
+									<td class="cellule_table_sport range"> 1 </td>
+		
+									<td class="cellule_table_sport range"> 3</td>
+								</tr>
+								<tr>
+									<td class="entete_table_sport">Médailles</td>
+									<td>
+										<img src="Images/medaille1.jpg" alt="medaille d'or" class="medaille" >
+									</td>
+									<td>
+										<img src="Images/medaille2.jpg" alt="medaille d'argent" class="medaille" >
+									</td>
+									<td>
+										<img src="Images/medaille1.jpg" alt="medaille d'or"  class="medaille" >
+									</td>
+									<td>
+										<img src="Images/medaille3.jpg" alt="medaille de bronze "  class="medaille" >
+									</td>
+								</tr>
+						
+								
+							</table>
+							<br>
+						
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+				<!-- ********************  Fin section Salimmma     ************************* -->	
+
+		</section>
+
+		<!--******************* La plus jeune Amel Melih  : identique au modéle de ces précédente ********************** -->
+		<section id="Amel" class="carte-biblio" style="margin-top: 10%; margin-bottom: 2%;">
+			<div class="biblio">
+			<div class="biblio-menu" >
+				<figure  class="figure-menu">
+					<img  src="Images/Amel_melih.jpg" alt="Amel Melih"  class="img-menu figure_personnage">
+					<figcaption> </figcaption>
+				</figure>	
+				<nav>
+					<ul class="list_menu">
+    			 		<li>
+    			 			<a href="#apropos_Amel" >A propos</a>
+    			 		</li>
+    			 		
+    					
+    					<li>
+    						<a href="#carriere_Amel">Carrière sportive</a>
+    					</li>
+    					
+    					<li>
+    						<a href="#Palmarès_Amel">Palmarès</a>
+    					</li>
+    					</ul>
+				</nav>
+			</div>
+			<div class="biblio-contenu">
+				<h2 class="nom_personnage">Amel Melih</h2>
+				<div>
+					<div  id="apropos_Amel" >
+						<h3 class="titre-h3">1.  A-propos</h3>
+					</div>
+					<div>
+						<p>
+						Amel Melih est <strong>une nageuse algérienne </strong> qui est née le 6 octobre 1993 à Lyon , France.
+						Elle a commencé la natation à l'age de 4 ans qui lui a permetté d'avoir une grande éxperience malgré son jeune âge .
+						</p>
+						<p>
+						Elle a représenté l'Algérie dans plusieurs championnats arabes, d'Afrique et du monde. Elle a remporté plusiuers médaille. 
+						</p>
+
+				    	
+						<ul>
+							<li>
+								<strong>Sport : </strong>Natation
+							</li>
+							<li>
+								<strong>Période active : </strong> 1990- jusqu'à présent
+							</li>
+							<li>
+								<strong>Nationalité sportive : </strong> Algérie Algérienne
+							</li>
+							
+							<li>
+								<strong>Naissance : </strong> 6 octobre 1993 (25 ans)
+							</li>
+							<li>
+								<strong>Lieu de naissance :	</strong> Lyon (France)
+							</li>
+							
+					   </ul>
+					</div>
+
+					<div id="carriere_Amel" >
+						<h3 class="titre-h3">2.  Carrière sportive</h3>
+						<table>
+							<tr>
+								<td class="axe-futur niveau">Début de carrière</td>
+								<td class="contenu_niv">
+									<p>
+									Comme pour beaucoup de petites filles, la nage a d’abord consisté pour elle au plaisir de barboter dans l’eau, durant les beaux jours d’été. C’est du haut de ses 4 ans qu’Amel Melih se jette à l’eau pour la première fois. Née à Lyon de parents originaires d’Honaïne, ville côtière située dans la région de Tlemcen, Amel Melih cherche à apprivoiser la Méditerranée.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="axe-présent niveau">Carrière de haut niveau</td>
+								<td class="contenu_niv">
+									<dl>
+										<dt>
+											Championnats et Jeux africains
+										</dt>
+
+										<dd>
+											Elle participe trois fois aux Jeux Africains. En 2011 , à Mozambique ,était sa première participation à un championnats officielle , elle a eu 5 médailles en bronze. En 2016, elle a brillé en Afrique du sud en remportant 3 médailles d'or , 2 en argent et 3 en bronze.Enfin ,Elle a pris 2 médailles en argent et 6 médailles en bronze dans les jeux Africains 2018 en Algérie .
+										</dd>
+										<dt>
+											Autres compétitions internationales
+										</dt>
+										<dd>
+											-  En 2011, les jeux panarabes se tenant à Qatar ou  elle a eu 3 médailles , une en or , bronze et argent.
+										</dd>
+										<dd>
+											-  En 2016, dans les championnats arabes en Emirates Arabes Unis elle a emporté 2 médailles d'or ,3 en argent et une en bronze
+										</dd>
+										<dd>
+											- En 2017 , Elle a pris 2 médailles en Bronze  dans les jeux Islamiques qui avait lieu en Azrerbaîdjan 
+										</dd>
+									
+
+									</dl>
+
+
+
+								</td>
+							</tr>
+						</table>
+					
+
+				
+					</div>
+						
+					<div  id="Palmarès_Amel" >
+						<h3 class="titre-h3">3.  Palmarès</h3>
+					</div>
+					<div>
+						<p>Triple championne d’Afrique, Amel Melih est sans nul doute la nageuse algérienne au plus beau palmarès. Et la sprinteuse n’a que 25 ans.</p>
+						<table>
+								<tr class="tr-separation">
+									<td class="entete_table_sport">Années</td>
+									<td class="cellule_table_sport"  colspan="2">2011</td>
+									<td  class="cellule_table_sport"  colspan="2">2016</td>
+									<td class="cellule_table_sport" >2017</td>
+									<td class="cellule_table_sport" >2018</td>
+								</tr>
+								<tr>
+									<td class="entete_table_sport">Compétitions</td>
+									<td class="cellule_table_sport">Jeux Africains</td>	
+									<td class="cellule_table_sport">Jeux panarabes</td>	
+									<td class="cellule_table_sport">Championnats d'Afrique</td>
+									<td class="cellule_table_sport">Championnats arabes </td>
+									<td class="cellule_table_sport">Jeux Islamiques</td>
+									<td class="cellule_table_sport">Championnats d'Afrique</td>
+
+								</tr>
+								<tr>
+									<td class="entete_table_sport">Médailles</td>
+									<td>
+										<img src="Images/medaille3.jpg" alt="medaille de bronze" class="medaille" >
+									</td>
+									<td>
+										<img src="Images/medaille1.jpg"  alt="medaille d'or" class="medaille">
+									</td>
+									<td>
+										<img src="Images/medaille1.jpg"  alt="medaille d'or" class="medaille">
+									</td>
+									<td>
+										<img src="Images/medaille1.jpg"  alt="medaille d'or" class="medaille" >
+									</td>
+
+									<td>
+										<img src="Images/medaille3.jpg" alt="medaille de bronze"  class="medaille" >
+									</td>
+									<td>
+										<img src="Images/medaille2.jpg" alt="medaille d'argent" class="medaille" >
+									</td>
+								</tr>
+						</table>
+
+					</div>
+				</div>
+			  </div>
+			</div>
+					<!--*******************  Fin section Amel Melih  ********************** -->
+
+		</section>
+				<!--******************* Fin de l'article   ********************** -->
+
+	</article>
+			<!--*******************************Le footer  *************************************** -->
+
+	<footer>
+		<q> La femme a été mise au monde pour s'arranger de tout et pour tout arranger .  </q>
+	</footer>
+</body>
+</html>

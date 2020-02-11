@@ -1,0 +1,161 @@
+   /**************************************************************************/
+  /******************** CSS destiné au élément en commun  *******************/
+ /************ pour chaque profil de définition d'un personnage ************/
+/**************************************************************************/
+
+*{
+  box-sizing: border-box;/*Les propriétés width et height incluent le contenu, 
+                           le remplissage (padding), la bordure, */
+}
+
+body{
+    height: 1000px;/* Lageur du body de la page de chaque profil */
+}
+
+.list_menu {
+  /***  CSS du menu de navigation de chaque bibliographie d'un personnage ***/
+  list-style-type: none;/* Enlevé les style de la liste (ul) */
+  margin: 0;/* enlevé le margin*/
+  padding: 0;/* enlevé le margin*/
+  width: 100%;/* représente  tout la largeur */
+  background-color: rgba(51, 110, 123, 1);/* Couleur du fond */
+}
+
+.list_menu li a {
+  display: block;/* Les liste sont comporté comme des blocks*/
+  color: white;/* coleur de police blanc*/
+  padding: 10px 14px;/* un padding haut et bas, gauche et droite */
+  text-decoration: none;/* enelevé toute décoration du text car 
+                        un text de type lien (a) a par défaut une décoration*/
+  font-size: 1.2em;/* taille de police */
+}
+
+.biblio{
+   display: inline-block;/* donnée la a l'élement biblio le type inline avec 
+                          les fonctionnalté d'un block (largeur,margin,padding 
+                          ..etc) */
+   width: 100%;/* la div qui contient la class biblio prend toute la largeur */
+   margin: auto;/* définission d'un margin auto */
+}
+
+.list_menu li a:hover {
+  /** CSS quand on gliss un élément du menu du profil */
+  background-color: #f1f1f1;/* couleur du fond */
+  color: rgba(51, 110, 123, 1);/* couleur de police*/
+  font-weight: bold;/* police en gras*/
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+             /* un box-shadow lors de coulissement des elements du menu */
+}
+
+.list_menu li a:active {
+  /* CSS lors du click d'un menu ( selection d'une partie de la bibliographie
+  d'un eprsonnage */
+  color: white;/* couleur de police devient blanc */
+  background-color:  #111;/* couleur du fond change */
+}
+
+.biblio-menu h1 {
+  text-align: center;/* alignement du titre principale dans le menu est centré */
+}
+
+.carte-biblio{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              /* box-shadow pour donnée un effet a chaque carte de bibliographie */
+   /* Définition des différente marge par rapport a la carte */
+   margin-left: 8%;
+   margin-right: 8%;
+   margin-top: 10%;
+   margin-bottom: -6%;
+}
+
+.biblio-contenu{
+   /* définition des caractéristique de coté qui contien le contetnu 
+   d'une bibliographie : largeur, remplissage et marge; */
+    width : 70%;
+    padding: 1%;
+    float : none;/* Nous avons enlevé le float car il a été définit ailleuer*/
+    margin-left: 2%;
+    margin-bottom: 1%;
+    padding-right: 3%;
+}
+
+.figure-menu figcaption{
+   text-align:  center ; /* Centré les titres associé au figure*/ 
+}
+
+.biblio-menu{  
+  float: left;
+  width: 25%;
+  /*  Le positionnement collant est un hybride de positionnement 
+      relatif et fixe. L'élément est traité en tant que position 
+      relative jusqu'à ce qu'il dépasse un seuil spécifié,  
+      point auquel il est traité en position fixe. 
+  */
+  position: sticky; /* W3cschool https://www.w3schools.com/howto/howto_css_sticky_element.asp*/
+  position: -webkit-sticky; /* W3cschool https://www.w3schools.com/howto/howto_css_sticky_element.asp*/
+  background: rgba(255, 148, 120, 1);
+  border-radius: 5% ;
+  padding: 1.5% 3%;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 6px #000;
+  color: #fff;
+}
+
+.figure_personnage{
+  /* CSS d'une figure de chaque peronange : dimension et marge et bordure; */
+  height: 200px;
+  width: 200px;
+  margin :0 auto ;
+  border-radius: 50%;
+}
+
+q{
+  /* écrire les citations en italique */
+  font-style: italic;
+}
+
+.entete_table{
+  /* Style d'une cellule de type entete d'un tableau : couleur de fond,
+   bordure,couleur de police taille et largeur et alignement avec remplissage */
+  background-color:rgb(49, 104, 98);
+  border:2px solid rgb(49, 104, 98);
+  color:white;
+  font-size: large;
+  font-weight: bold;
+  text-align: center; 
+  padding: 15px 25px 15px 25px ;
+}
+
+.cellule_table{
+/* CSS d'une cellule d'une table : couleur de fond, bordure,couleur de police
+  taille et largeur et alignement avec remplissage */
+  background-color:rgba(49, 104, 98,0.2);
+  border:2px solid rgba(49, 104, 98,0.4);
+  /*color:rgb(49, 104, 98);*/
+  color  : rgba(219, 10, 91, 1);
+  font-size: large;
+  font-weight: bold;
+  text-align: center; 
+  padding: 15px 40px 15px 40px ;
+}
+
+.cellule_contenu{
+  /*  css du cellule qui contient le contenu: couleur de text, 
+    taille et alignement*/
+  color:#111;
+  font-size: medium;
+  text-align: left;
+}
+
+.ajustement-ul{
+  /* minimisé l'espace des ul avec leur style*/
+  padding-left: 0;
+}
+
+.tr_separation{
+  /* faire une bordure de séparation*/
+  border-bottom: 2px solid #111;
+}

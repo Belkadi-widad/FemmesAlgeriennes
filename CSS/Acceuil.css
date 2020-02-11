@@ -1,0 +1,281 @@
+  /**************************************************************************/
+  /******************** CSS destiné A la page d'accueil  *******************/
+  /************************************************************************/
+
+
+*{
+	box-sizing: border-box;/* pour touuuuuut le fichier : border-box indique au navigateur de prendre en
+   compte la bordure et le remplissage dans la valeur 
+   définie pour la largeur et la hauteur. */
+
+}
+
+/***************** header ***************/ 
+
+/*Classe header définit le style de header de la page d'accueil : background , largeur , hauteur , rembourage  et
+ display : inline-block permet  de définir une largeur et une hauteur  et aussi pour 
+ que  les marges et les rembourrages supérieurs et inférieurs soient  respectés.*/
+.header{
+	background-color :rgba(51, 110, 123, 1) ;
+	width: 100%;
+	height: 10%;
+	padding: 2px ;
+	display: inline-block;
+}
+
+/* propriétés du logo du header */
+#logo {
+  
+    border-radius: 50%; /*définit les  coins arrondis pour la bordure du logo : 50% se qui donne un rond  */ 
+    width: 50px; /* largeur */ 
+    height: 50px; /*hauteur */ 
+    float: left; /* float left dans le header */ 
+    margin-right: 2%;  /* les marges */ 
+    margin-left: 2%;
+    margin-top: 0.5%;
+}
+.h1-acceuil{
+
+    margin-block-start: 0.3em;
+    margin-block-end: 0.47em;
+    color: white;
+
+}
+/*******************************le nav *******************************/
+
+.nav-header{
+float : right ;
+width: 10%;
+padding-left: 4%;
+padding-top: 0.5%;
+padding-bottom: 0.5%;
+}
+.div-header{
+float : left ;
+width: 90%;
+}
+
+/********************  ****************/
+
+/* Dropdown */
+/* https://codepen.io/raneio/pen/NbbZEM */
+.dropdown /* le label  */
+{
+  display: inline-block;
+  position: relative; /* pour  le décalage vertical . "le drop "*/
+}
+
+.dd-button 
+/* ou se situe l'icon du menu */
+{
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 10px 30px 10px 20px;
+  background-color: #ffffff;
+  cursor: pointer; /*cursor définit la forme du curseur (s'il y en a un) lorsque le pointeur 
+                    est au-dessus du menu dans notre cas c'est un pointeur */
+  white-space: nowrap;  /*permet de laisser l'icon blanche */
+}
+/* l'icon du menu  */
+.dd-button img{
+  width: 25px;
+}
+
+.dd-button:after /*crée un pseudo-élément qui sera le dernier enfant de  du menu et lui donné un contenu null .  */
+{
+  content: '';
+  position: absolute; 
+  top: 50%;/* top , right  indiquent les distances entre les bords car la position est absolue */
+  right: 15px;
+  transform: translateY(-50%); /* le drop ! tranformation de l'axe y de 50% et donc verticale */
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent; /*les bordures */
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+
+/* le hover du boouton */
+.dd-button:hover {
+  background-color: #eeeeee;
+}
+/* le check box ! , pour le cacher et faire jolie ! */
+
+.dd-input {
+  display: none;
+}
+
+/* le corps du menu */
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color: white;
+  list-style-type: none;/* pour les li sont les puces ! */
+
+}
+/* sans clique sur le menu aucun comportement  (caché ) */
+.dd-input + .dd-menu {
+  display: none;
+} 
+/* quand on clique sur le menu et donc le check box est checked : comportement block */
+.dd-input:checked + .dd-menu {
+  display: block;
+} 
+
+/* les items (li )  du menu  (un ul) */
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer; 
+  white-space: nowrap;
+}
+/* le hover des items (li)  du menu */
+.dd-menu li:hover {
+  background-color: #f6f6f6;
+}
+
+/* les liens des items du menu */
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+/* le dernier elément du menu */
+
+.dd-menu li.divider{
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+/************** main *******************/
+
+/*style du  main  : enlever le float gauche et droit , la hauteur  */
+main{	
+		clear: both ; 
+		height: 84%;
+	
+}
+
+
+/*Le main */
+.contenu{ 
+margin :  0px ; 
+height: 653px;	
+}
+ /* le header de l'articlee */
+.debut-accueil {
+    padding: 10px;
+    text-align: center;
+    padding: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+
+}
+
+
+/* cette classe représente  les sections de l'article du main  */
+.section-main{
+
+    margin: 2%;  /*marge  top bottom right et left = 2%*/ 
+    width: 23%; /* largeur = 23%*/
+   display: inline-block; /* permet de rendre les section horizentalle */
+
+}
+
+/* classe carte représente les cartes de l'accueil  Histoire  , Art et sport */
+.carte {
+
+border :2px dashed black; /* les bordures de la carte de 2 px avec un style  de tirets noir (--) */
+color:white; /* couleur de font blond */
+border-radius: 5%; /*angle d'arrondis */
+padding : 5% ; /* rembourage top bottom right left = 5%*/
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* style d' ombre */
+}
+.article-main{
+
+  float : left;
+  width: 100%; /* pour le centrage horizentalle  ref : https://www.alsacreations.com/tuto/lire/1032-comment-centrer-verticalement-sur-tous-les-navigateurs.html */    
+  margin-top : auto ; 
+  margin-bottom : 3% ; 
+  text-align:center; 
+  
+}
+/* style des titre h2 */
+h2{
+
+text-align: center;
+
+}
+/* style des liens a  */
+
+a{
+text-decoration: none;
+
+}
+
+/* style des liens des cartes histoire, art , sport lors du hover   */
+
+section a div:hover{
+  border : none ;
+  background-color: rgba(255, 99, 71, 0.6);
+  color : hsl(0, 0%, 24%) ;
+  
+}
+/* background de la carte histoire */
+.bg_histoire{
+  background-color: rgb(212, 47, 36);
+}
+/* background de la carte sport  */
+
+.bg_sport{
+  background-color: rgb(45, 170, 150);
+}
+/* background de la carte art */
+
+
+.bg_art{
+  background-color: rgb(240, 162, 36);
+}
+/* Les figures des cartes   */
+
+.figure-menu{
+  margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* style des images des cartes   */
+
+.img-menu{
+  border-radius: 5%;
+  margin : 0 auto ;
+  width: 250px;
+  height: 300px
+
+}
+
+/*********************** Le footer********************** */
+
+
+footer{
+    clear: both ; /*: enlever le float gauche et droit ,*/
+    height: 6%; /* la hauteur par rapport à la page  */
+    background-color :rgba(51, 110, 123,1 ) ;/* le back ground */
+    text-align: center; /* Alignement centrale du texte */ 
+    padding-top: 8px ; /* rembourage top  pour que les deux élements ne cheuvauche pas */
+}
+
+/* le quote (la citation ) du foooter*/
+footer q {
+color : white; /* font blanc */
+text-decoration-style: unset; /* non fixé  ! */
+width : 10px; /* largeur */
+}
+

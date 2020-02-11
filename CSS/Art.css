@@ -1,0 +1,310 @@
+  /***************************************************************************/
+ /************* CSS destiné principalement à la page Art  **************/
+/***************************************************************************/
+p{
+    text-indent: 30px;
+}
+
+.main{
+  box-sizing: border-box;
+    float: right;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-right: 3%;
+
+}
+
+.titre-h3{
+  font-size: large;
+  font-weight: bold;
+  font-family: Arial;
+  color:rgb(212, 47, 36);
+  margin: 4px;
+}
+
+.titre-h5{
+ text-indent: 30px;
+  font-size: medium;
+  font-weight: bold;
+  font-family: Arial;
+  color:rgba(226, 106, 106, 1);
+  margin: 3px;
+
+}
+
+.personnage-art{
+   margin-bottom:0%;
+}
+
+.biblio-art{
+   width: 100%;
+  margin: auto;
+}
+
+
+.biblio-contenu {
+   box-sizing: border-box;
+   float: left;
+
+}
+
+
+.personnage-art{
+float : left ;
+        margin-top: 1%;
+    margin-left: 1%;
+}
+
+.biblio-menu-art{
+
+    float: left;
+      padding: 3%;
+    border-radius: 5% ;
+  width: 25%; 
+}
+
+
+
+.carte-biblio-art{
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/***********************Le menu vertical flottant ********************************/
+
+.nav-vertical{
+
+width: 20%;
+    height: 100%;
+    padding-top: 20%;
+    position: fixed;
+    top: -20px;
+    left: -25px;
+}
+
+.list-icon{
+  list-style-type: none;
+  width: 60%;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  /*border : 5px solid blue;*/
+  border-radius: 30% ;
+  background-image: url("../Images/plume.jpg");
+
+}
+
+.icon-menu{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    
+}
+
+
+
+/**********Les 3 Listes qui se retrouvent dans chaque section d'un personnage***********/
+
+/*entête du liste*/
+.entete_type_oeuvre{
+    padding: 2%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: large;
+    width: 31%;
+    border-radius: 3%;
+    margin-top: 2%;
+    z-index: 2;
+    position: relative;
+}
+.corp_liste_oeuvre{
+   z-index: 1;
+   margin-top: -4%;
+   padding-top: 3%;
+}
+.corp_liste_oeuvre ul{
+  color:#555;
+}
+
+/******/
+.type1_entete{
+   background-color: rgb(240, 162, 36);
+   margin-left: 6%;
+}
+.type1_corp{
+   border: 2px solid rgba(240, 162, 36, 0.12);
+   background-color: rgba(240, 162, 36, 0.12);
+}
+
+.type2_entete{
+   background-color: rgba(212, 47, 36,0.85);
+   margin-left: 14%;
+}
+.type2_corp{
+   border: 2px solid rgba(212, 47, 36,0.06);
+   background-color: rgba(212, 47, 36,0.06);
+    margin-left: 8%;
+}
+
+.type3_entete{
+   background-color: rgb(45, 170, 150);
+   margin-left: 22%;
+}
+.type3_corp{
+   border: 2px solid rgba(45, 170, 150, 0.04);
+   background-color: rgba(45, 170, 150, 0.04);
+    margin-left: 16%;
+}
+
+
+
+
+
+/****************************Les domaines***************************/
+
+
+.entete_domaine{
+width: 20%;
+height: 10%
+-webkit-border-radius: 0px 40px 0px 40px;
+-moz-border-radius: 0px 40px 0px 40px;
+border-radius: 0px 29px 0px 29px;
+    margin-bottom: 1.5%;
+    margin-left: -2.2%;
+}
+
+.corp_domaine{
+   z-index: 1;
+   margin-top: -4%;
+   padding-top: 3%;
+   padding-bottom: -5%;
+   padding-left: 3%;
+   padding-right: 3%;
+   border : 1px solid black ;
+  padding-bottom: 3%;
+
+}
+
+/******************/
+.entete_domaine_dessin{
+border: 6px double black;
+background-color: rgba(236, 112, 99,1);
+color : white ;
+}
+.entete_domaine_galerie{
+border: 6px double black;
+background-color: #FAA945;
+color : white ;
+}
+.entete_domaine_littérature{
+
+border: 6px double black;
+background-color: #CF3A24 ;
+color : white ;
+
+}
+
+/*********************************La Galerie d'images******************************/
+
+
+.portfolio {
+  display: grid;
+  grid: auto / repeat(auto-fit, minmax(15em, 1fr));
+  grid-gap: 1em;
+  padding: 4em 3em;
+}
+
+.portfolio__item {
+  position: relative;
+  flex-basis: 30%;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.portfolio__desc {
+  padding: 1.5em;
+}
+
+.portfolio__title {
+  margin-top: 0;
+  text-align: center;
+  margin-top: 10px ;
+  font-family: 'Roboto Condensed', sans-srif;
+  color: white;
+}
+
+.portfolio__image{
+   width: 250px;
+  height: 150px;
+  display: block;
+   margin: 9%;
+}
+
+
+/* l'image agrandie (lightbox) n'est pas affiché seulement si on clique sur la petite photo : 
+la propriété "desplay:none" sera modifié en "display: flex" */
+.portfolio-lightbox {
+
+    align-items: center; /*les articles sont centrés dans l'axe transversal*/
+    justify-content: center; /*indique la façon dont l'espace doit être réparti entre et 
+    autour des éléments selon l'axe principal d'un conteneur flexible  : ici centrer */
+    padding: 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    display: none;
+    background: rgba(0, 0, 0, .5);
+  // box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .25);
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+/*:target permet de cibler l'unique élément (s'il existe) 
+dont l'attribut id correspond au fragment d'identifiant de l'URI du document. (MDN web docs )
+rendre display flex */
+.portfolio-lightbox:target {
+  display: flex;
+
+}
+
+.portfolio-lightbox__content {
+  width: 730px;
+  padding: 1em;
+  background: black;
+  position: relative;
+}
+
+.portfolio-lightbox__image{
+  width: 700px;
+  height: 500px;
+  display: block;
+}
+
+
+/*********le boutton fermer du lightbox *******/
+.close {
+  position: absolute;
+  right: -1em;
+  top: -1em;
+  border: white 2px solid;
+  display: flex;
+  width: 2em;
+  height: 2em;
+  background: red;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.close::after {
+  content: 'x';
+  color: white;
+}

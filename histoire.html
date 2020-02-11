@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/Acceuil.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Axe.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Profil.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Histoire.css">
+	<title>Histoire</title>
+	<link rel = "icon" type = "image/png" href = "Images/algerie.png" />
+	
+
+</head>
+<body class="contenu">
+		<!---------------------   Entete de la page   -------------------------->
+	<header class="header"> 
+				<!------------------  Partie logo et nom de site  ------------------>
+
+		<div class="div-header">
+			<img src="Images/icon.jpg" id="logo" alt="logo" >
+			<h1 class="h1-acceuil"> Femmes Algériennes </h1>
+		</div>
+		<!--  Un navigateur permettant d'aller vers les autres page (raccourcis) -->
+		<nav class="nav-header">
+				 <!-- Le sous menu est sous forme d'un dropdown contenant une liste (ul li) des différente liens vers les autres page (a)-->
+ 			<label class="dropdown" >
+  				<div class="dd-button">
+   					<img src="Images/menu.png" alt="menu icon" >
+  				</div>
+  				 <!-- Utilisation d'un checkbox clickable, lors de son check la liste déroulante s'affiche ou se réduit -->
+  				<input type="checkbox" class="dd-input" id="test">
+
+   			<ul class="dd-menu">
+    				<li><a href="./histoire.html">Histoire</a></li>
+    				<li><a href="./art_culture.html">Art et culture</a></li>
+    				<li><a href="./sport.html">Sport</a></li>
+   				 	<li class="divider"></li>
+    				<li>
+      					<a href="./projet.html">Accueil</a>
+   					 </li>
+  			</ul>
+  
+			</label>
+		</nav> 
+
+
+	</header>
+	<!-- La balise article contient le contenu principale de la page histoire -->
+	<article>
+		<header >	
+			 <!-- Entete de l'article : l'entete est sous forme d'un axe de temps indiquant 3 période ( domaine d'année ) ou appartient les personnage définit ci-dessus -->
+		    <!-- Le rectangle de l'axe -->	
+			<div class="axe-global">
+			<!-- Définition des années de la première période de guerres ( 1830-1954)-->
+
+		<a href="#" class="axe-temp axe-passé" style="border-left:1.5px solid black;">
+			<!-- La définition du style a été faite ici dans le but d'écrasé le style ayant tout a appartenant a la class axe-global car tout les balise a agissent de la meme manière -->
+			<strong>1830</strong>	
+			<strong style="margin-left: 50%;">1954</strong>	
+		</a>
+				  <!-- Définition des années de la 2éme période de guerres ( 1954-1962)-->
+
+		<a href="#" class="axe-temp axe-présent">
+			<strong>1954</strong>	
+			<strong style="margin-left: 50%;">1962</strong>	
+		</a>
+		<!-- Définition de la période actuel qui possède des personnages qui contenue a battre pour l'algérie jusqu'a aujourd'hui tel que ( Djamila Bouhirad )-->
+		<a href="#" class="axe-temp axe-futur">
+			<strong>Aujourd'hui</strong>
+		</a>
+		
+			</div>
+
+		<div  class="barres-cartes">
+			<!-- La partie des étiquettes de personnages appartenant a chaque période de l'axe du temp -->
+			<div class="barres">
+				<!-- La partie liaison entre les div définisson les périodes et les étiquettes des personnages -->
+				<div class="bare bare-right">
+				</div>
+				<div class="bare bare-middle">
+				</div>
+				<div class="bare bare-left ">
+				</div>
+
+			</div>
+			<div class="cartes">
+				<!-- Cette partie représente les étiquettes de chaque personnage sous forme d'un lien vers leur bibliographie -->
+				<a href="#Fatima" class="carte-per carte-right">
+					<strong>Lala Fatma <br> Nssoumar </strong>	
+				</a>
+				<a href="#Hassiba" class="carte-per carte-middle">
+					<strong>Hassiba <br> Ben Bouali </strong>
+				</a>
+
+				<a href="#Djamila" class="carte-per carte-left">
+					<strong> Djamila <br> Bouhirad</strong>
+
+				</a>
+		</div>
+			
+		</div>
+			<!-- Le triangle  de l'axe -->	
+			<div class="triangle-right">
+			</div>
+		</header>
+		<!-- Première section de l'article contien la bibliographie de lala fatima nsumer -->
+		<!-- Chaque section contient deux partie : une partie menu et une autre pour le contenu, la partie menu elle meme est divisé en 2 partie : la figure (photo de profil de perssonage) et un menu permettant de naviguer les différentes filiale de la bibliographie-->
+		<section id="Fatima" class="carte-biblio">
+					<div class="biblio">
+
+			<div class="biblio-menu" >
+				<figure  class="figure-menu">
+					<img  src="Images/Fatma-nsumer.jpg" alt="Fatma nssoumar"  class="img-menu figure_personnage">
+					<figcaption> 
+						
+					</figcaption>
+				</figure>	
+				<!-- menu de navigation -->
+
+				<nav>
+					<ul class="list_menu">
+    			 		<li>
+    			 			<a href="#apropos_fatima" >A propos</a>
+    			 		</li>
+    					
+    					<li>
+    						<a href="#combat_fatma">Combat</a>
+    					</li>
+    					<li>
+    						<a href="#personnalite_fatma">Personnalité et caractère</a>
+    					</li>
+    					<li>
+    						<a href="#hommage_fatma">Hommage</a>
+    					</li>
+    				</ul>
+				</nav>
+			</div>
+						<!-- Partie contenu -->
+
+			<div class="biblio-contenu">
+								<!-- Nom du personnage -->
+				<h2 class="nom_personnage">Lalla Fatma N'Soumer (لالة فاطمة نسومر )</h2>
+				<div>
+						<!-- Titre de la partie -->
+					<div  id="apropos_fatima" >
+						<h3 class="titre-h3">1.  A-propos</h3>
+					</div>
+										<!-- Contenu de la partie -->
+
+					<div>
+												<!-- Suite de paragraphe définissons lala fatma nsuemr-->
+						<p>
+							 Lalla Fatma N'Soumer (en berbère : Lalla Faḍma n Sumer, en tifinagh : ⴼⴰⴹⵎⴰ ⵏ ⵙⵓⵎⵔ, en arabe : لالة فاطمة نسومر), née en 1830 à Aïn El Hammam et morte en 1863 à Tablat, est une figure du mouvement de résistance algérien au cours des premières années de la conquête de l'Algérie par la France.
+				    	</p>
+				    	<p>
+							 De 1854 à juillet 1857, elle mène une résistance contre les Français, capturée par les forces françaises, elle est emprisonnée jusqu'à sa mort six ans plus tard.
+						</p>
+							<!-- Une liste d'information (identité du personnage) -->
+
+						<ul>
+							<li>
+								<strong>Date et lieu de naissance : </strong>10 juillet 1830, Ouerdja
+							</li>
+							<li>
+								<strong>Date et lieu de décès : </strong> 1863, Tablat
+							</li>
+							<li>
+								<strong>Faits d'armes : </strong> Bataille du Haut Sebaou
+							</li>
+							<li>
+								<strong>Commandement :	</strong> Imseblen
+							</li>
+							<li>
+								<strong>Conflits : </strong> Conquête de l'Algérie par la France
+							</li>
+							<li>
+								<strong>Années de service : </strong> 1849-1857
+							</li>
+							<li>
+								<strong>Surnom : </strong> Jeanne d'Arc du Djurdjura
+							</li>
+							<li>
+								<strong>Parents : </strong> Lalla Ben Aissi Khlidja, Sheikh Ali
+							</li>
+					   </ul>
+					</div>
+					<div  id="combat_fatma" >
+						<h3 class="titre-h3">2.  Combat</h3>
+					</div>
+					<div>
+						<!-- Paragraphe pour une petite into de cette partie-->
+
+						<p>
+						    Fatma forme un noyau de résistance8 dans le hameau Takhlijt Aït Aatsou, près de Tirourda. Nous allons quelques dates importantes durant le combat de Lalla Fatma N'soumer
+						</p>
+						<!-- Un tableau contenant les différentes actes qu'elle a fait le personange -->
+
+						<table>
+							<thead>
+								<tr>
+									<th class="entete_table">Date</th>
+									<th class="entete_table">Actes</th>
+								</tr>
+						    </thead>
+							<tbody>
+								<tr>
+									<td class="cellule_table">1849</td>
+									<td class="cellule_table cellule_contenu">Fatma N'Soumer entre dans la résistance et se rallie à Si Mohammed El-Hachemi (la région des Babors).</td>
+								</tr>
+								<tr>
+									<td class="cellule_table">1854</td>
+									<td class="cellule_table cellule_contenu"> elle remporte sa première bataille face aux forces françaises à Tazrouk (près de Aïn El Hammam), connue sous le nom de bataille du Haut Sebaou. Elle dure deux mois de juin à juillet 1854. Les troupes françaises sont vaincues et contraintes de se retirer. Les villages environnants sont toujours indépendants.
+									</td>
+								</tr>
+								<tr>
+									<td class="cellule_table">1857</td>
+									<td class="cellule_table cellule_contenu">les troupes du maréchal Randon réussissent à occuper Aït Iraten à la suite de la bataille d'Icheriden. Les combats sont féroces, et les pertes françaises considérables.
+									</td>
+								</tr>
+								<tr>
+									<td class="cellule_table">
+										11/07/1857
+									</td>
+									<td class="cellule_table cellule_contenu">
+										Fatma est arrêtée par le général Youssouf. Elle est conduite au camp du maréchal Randon à Timesguida, et est emprisonnée dans la zaouia d'El-Aissaouia, à Tablat, placée ensuite en résidence surveillée sous la garde de si Tahar ben Mahieddine.
+									</td>
+							   </tr>
+							   <tr>
+									<td class="cellule_table">
+										1863
+									</td>
+									<td class="cellule_table cellule_contenu">
+									Elle y meurt en , à l'âge de 33 ans, éprouvée par son incarcération et affectée par la mort de son frère en 1861.
+									</td>
+							   </tr>
+						    </tbody>
+						</table>
+						<p>
+							Sa tombe demeure longtemps un lieu de pèlerinage pour les habitants de la région. Ses cendres sont transférées en 1994 du cimetière de Sidi Abdellah, à 100 mètres de la zaouia Boumâali à Tourtatine, vers le Carré des martyrs du cimetière d'El Alia, à Alger.
+						</p>
+					</div>
+					<div  id="personnalite_fatma" >
+						<h3 class="titre-h3">3.  Personnalité</h3>
+					</div>
+					<div>
+						<p>
+							L'historien Georges Duby décrit Lalla Fatma N'Soumer comme : 
+						</p>
+						<!-- Partie en italique car c'est une parole et stylé dans la classe poeme  -->
+
+						<em class="poeme">
+						 	« la grosse, et volumineuse beauté », la Velléda, prophétesse germanique
+						</em>
+					</div>
+					<div id="hommage_fatma" >
+						<h3 class="titre-h3">4.  Hommage</h3>
+											<!-- La table a été utilisé ici pour un bon partitionnage de la page -->					
+						<table class="table_hommage">
+							<tr>
+								<td>
+															 <ul class="ajustement-ul">
+							<li>
+								 Une statue de Lalla Fatma N'Soumer a été réalisée par Bâaziz Hammache à Tizi-Ldjama At-Bu-Yusef.
+							</li>
+							<li>
+								Un méthanier de gaz naturel liquéfié de la marine marchande algérienne, d'une capacité de 145 000 m3, réceptionné en 2004, est baptisé Lalla Fatma N'Soumer à Osaka au Japon16.
+							</li>
+							<li>
+								La vie de Lalla Fatma N'Soumer a été documentée dans le film Fatma N'Soumer réalisé par Belkacem Hadjadj, et publié en 2014-1-7. 
+							</li>
+							<li>
+								Des statues de Lalla Fatma N'Soumer sont exposées en Algérie. Quelques écoles et rues portent son nom en Algérie.
+							</li>
+						</ul>
+								</td>
+							<td>
+										<figure >
+							<img  src="Images/statut-fatma.jpg" id="stat_fatma_nsoumer" alt="statut fatma nssoumar ">
+							<figcaption>
+								 <em>
+								 	Statue de Lalla Fatma n'Soumer à Tizi-Ldjama At-Bu-Yusef (Tizi Ouzou, Algérie). 
+								 </em>
+							</figcaption>
+						</figure>	
+							</td>
+							</tr>
+						</table>
+
+				
+					</div>
+				</div>
+			  </div>
+			</div>
+		</section>
+			<!-- Deuxième section : personnage Hassiba ben bouali -->
+
+		<section id="Hassiba" class="carte-biblio">
+
+		<div class="biblio">
+						<!-- Partie menu -->
+			<div class="biblio-menu" >
+								<!-- Partie photo de profil du personnage -->
+				<figure  class="figure-menu">
+					<img  src="Images/Hassiba.jpg" alt="Hassiba Bendouali"  class="img-menu figure_personnage">
+					<figcaption> </figcaption>
+				</figure>	
+				<nav>
+									<!-- menu de navigation du profil hassiba ben bouali -->
+					<ul class="list_menu">
+    			 		<li>
+    			 			<a href="#apropos_Hassiba" >A propos</a>
+    			 		</li>
+    					
+    					<li>
+    						<a href="#combat_Hassiba">Combat</a>
+    					</li>
+    					<li>
+    						<a href="#Mort_Hassiba">Décès </a>
+    					</li>
+    					<li>
+    						<a href="#hommage_Hassiba">Hommage</a>
+    					</li>
+    				</ul>
+				</nav>
+			</div>
+			<!-- Contenu de la bibliographie de hassiba ben bouali -->
+			<div class="biblio-contenu">
+								<!-- Nom du personnage -->
+
+				<h2 class="nom_personnage">Hassiba Ben Bouali ( حسيبة بن بوعلي )</h2>
+									<!-- Titre de la partie -->
+
+				<div>
+					<div  id="apropos_Hassiba" >
+						<h3 class="titre-h3">1.  A-propos</h3>
+					</div>
+					<div>
+												<!-- Suite de paragraphe décrivant hassiba ben bouali -->
+
+						<p>
+						 Hassiba Ben Bouali (arabe : حسيبة بن بوعلي ), née le 20 janvier 1938 à Sendjas (ex.Bougainville)2 près d'Orléansville (aujourd'hui Chlef) en Algérie et morte le 8 octobre 1957 à la Casbah d'Alger, est une militante et résistante algérienne durant la guerre d'Algérie, participant notamment à la bataille d'Alger aux côtés d'Ali la Pointe, Zohra Drif et Yacef Saâdi chef de la Zone autonome d'Alger
+				    	</p>
+				    	<p>Elle obtient le certificat d'études primaires en 1950 et entre au lycée Pasteur (aujourd'hui annexe de la Faculté Centrale), où elle y étudia jusqu’en deuxième année. De nombreux témoignages la présentent comme une adolescente particulièrement éveillée, curieuse et sensible.<br>
+						C'est ainsi que, par le biais du scoutisme, elle effectue de grandes randonnées à travers le pays et découvre les conditions déplorables de vie de la paysannerie algérienne. L'étalage de l'injustice la révolte profondément. Hassiba Ben Bouali rêvait de devenir infirmière mais elle ne put que s'employer dans un bureau social, où elle complétera sa vision de la situation des Algériens.</p>
+									<!-- Liste des différentes information personnelle de hassiba ben bouali -->
+
+						<ul>
+							<li>
+								<strong>Date et lieu de naissance : </strong>20 janvier 1938 , Chlef
+							</li>
+							<li>
+								<strong>Date et lieu de décès : </strong> 8 octobre 1957 , Casbah d'Alger
+							</li>
+							<li>
+								<strong>Faits d'armes : </strong> Bataille d'Alger
+							</li>
+							<li>
+								<strong>Conflits : </strong> Conquête de l'Algérie par la France
+							</li>
+							<li>
+								<strong>Années de service : </strong> 1944-1857
+							</li>
+							
+					   </ul>
+					</div>
+					<div  id="combat_Hassiba" >
+						<h3 class="titre-h3">2.  Combat</h3>
+					</div>
+					<div>
+						<p>
+						   Hassiba Ben Bouali était un élément actif dans le groupe de fidaïyin et avait un rôle important, à côté de ses compagnon, dans le déclenchement de la bataille d'Alger.<br>
+						   Voici quelques dates importantes de son parcours :  
+						</p>
+						<table>
+							<thead>
+								<tr>
+									<th class="entete_table_hassiba">Date</th>
+									<th class="entete_table_hassiba">Actes</th>
+								</tr>
+						    </thead>
+							<tbody>
+								<tr>
+									<td class=" cellule_table cellule_table_hassiba">1955</td>
+									<td class="cellule_table cellule_table_hassiba cellule_contenu"> Hassiba Ben Boulai avait quitté le lycée , elle a renoncé à préparer son baccalauréat de philosophie et recrutée  au sein du FLN de la Zone autonome d'Alger .</td>
+								</tr>
+								<tr>
+									<td class="cellule_table cellule_table_hassiba">1956</td>
+									<td class="cellule_table cellule_table_hassiba cellule_contenu"> Elle suivait des cours d'infirmière pour devenir une infirmière dans un maquis de l'Armée de libération nationale (ALN) avant de devenir laborantine dans le « réseau bombe » qui est un groupe chargé de fabriquer des bombes et de les déposer sur les lieux d'opération.
+									</td>
+								</tr>
+								<tr>
+									<td class="cellule_table cellule_table_hassiba">1956</td>
+									<td class="cellule_table cellule_table_hassiba cellule_contenu">  Recherché et jugée à 20 ans de travaux forcés, et condamnée à mort alors se réfugie dans la Casbah, participe à la préparation de la grève de huit jours. Elle donne également des soins aux blessés. Les chefs du FLN l'emploient aussi comme secrétaire et propagandiste auprès des femmes de la Casbah pour les sensibiliser à la cause algérienne.
+									</td>
+								</tr>
+								
+						    </tbody>
+						</table>
+						
+					</div>
+					<div  id="Mort_Hassiba" >
+						<h3 class="titre-h3">3.Décès </h3>
+					</div>
+					<div>
+						<p> Le 8 octobre 1957, Hassiba Ben Bouali se trouvait dans une cache au numéro cinq de la rue des Abderames, en plein coeur de la Casbah, en compagnie d'Ali la Pointe et du petit Omar, âgé de douze ans.</p>
+						<p>A la tombée de la nuit, la maison fut encerclée par les parachutistes français. On somma les trois fedayins de se rendre. Devant leur refus, les soldats français firent sauter la maison. Hassiba Ben Bouali et ses compagnons périrent sous les décombres ainsi que 17 Algériens dont les maisons furent soufflées par l'explosion.</p>
+						<p>La martyre de Hassiba Ben Bouali devint un motif supplémentaire de la détermination du peuple algérien ainsi qu'une illustration éclatante de la participation de la femme algérienne au combat libérateur.</p>
+						<p>
+						Une lettre écrite en français de la main de Hassiba Ben Bouali, datée du 15 septembre 1957, soit 24 jours avant sa mort, est retrouvée en 2010, 53 ans après sa mort.
+						Une lettre de quatre pages qui respire sa sincérité et son engagement pour la guerre de Libération nationale.
+						</p>
+						<q class="poeme">
+						 	 Si je meurs, vous ne devez pas me pleurer, je serais morte heureuse, je vous le certifie.
+						</q>
+					</div>
+					<div id="hommage_Hassiba" >
+						<h3 class="titre-h3">4.  Hommage</h3>
+					
+						<table class="table_hommage">
+							<tr>
+								<td>
+							 <ul class="ajustement-ul">
+							<li>
+								En son honneur, l'université de Chlef porte son nom, ainsi qu'un lycée d'Alger dans l'arrondissement de Kouba, de même qu' un important boulevard de la ville d'Alger, du quartier la Farge, (Ruisseaux) jusqu'au boulevard Colonel Amirouche.
+							</li>
+							<li>
+								Un projet de musée qui lui serait dédié à Chlef a été conçu en 2016 par l'architecte Rudy Ricciotti.
+							</li>
+							
+						</ul>
+								</td>
+							
+							</tr>
+						</table>
+
+				
+					</div>
+				</div>
+			  </div>
+			</div>
+		</section>
+				<!-- Section du 3éme personnage  Djamila bouhired -->
+
+		<section id="Djamila" class="carte-biblio" style="margin-top: 10%; margin-bottom: 2%;">
+			<div class="biblio">
+				 <!-- menu de la bibliographie de djamila bouhired -->
+
+			<div class="biblio-menu" style="margin-left: 0%; margin-right: 0%">			
+								     <!-- Photo de profil de djamila bouhired -->			
+
+				<figure  class="figure-menu">
+					<img  src="Images/Djamila.jpg" alt="Djamila Bouhirad"  class="img-menu figure_personnage">
+					<figcaption></figcaption>
+				</figure>	
+				<nav>
+									     <!-- menu de navigation du profil djamila bouhirad-->
+
+					<ul class="list_menu">
+    			 		<li><a href="#Apropos-dj" class="test">Identitée</a></li>
+    					<li><a href="#Voyage-de-lutte-dj" class="test">L'histoire de sa lutte contre le colonialisme</a></li>
+    					<li><a href="#Hirak-dj" class="test">Le trait d'union pour la démocratie algérienne </a></li>
+    					<li><a href="#paroles-Djamila" class="test">Ses Plus populaires parolles</a></li>
+    					<li><a href="#paroles-sur-djamila" class="test">Citations</a></li>
+
+    				</ul>
+				</nav>
+			</div>
+							 <!--Contenu de la bibliographie de djamila bouhired -->
+
+			<div class="biblio-contenu">
+								 	 <!-- Titre nom du personange -->
+
+				<h2 class="nom_personnage">Djamila Bouhired (جميلة بوحيرد)</h2>
+				<div id="Apropos-dj">
+					<h3 class="titre-h3">Carte d'identité</h3>
+					<p>
+						Djamila Bouhired, née en 1935, est une militante du FLN, collaboratrice de Yacef Saadi chef de la Zone autonome d'Alger durant la guerre d'Algérie. 
+
+					</p>
+					<p>
+						Djamila Bouhaird est la prémiere combattante   Arabe lors de la révolution algérienne contre la colonisation française au milieu du XXe siècle. Elle fait partie des six femmes « condamnées à mort pour des actes terroristes » pendant cette gerre .
+					</p>
+											 <!-- Carte  d'identité -->
+
+					<ul>
+    						<li>Date et lieu de naissance : juin 1935 Alger.  </li>
+    						<li>Allégeance : FLN. </li>
+    						<li>Années de service : 1956-1962.</li>
+    						<li>Années de service :1956-1962. </li>
+    						<li>Conflits : 	Guerre d'Algérie</li>
+    						<li>Faits d'armes : Bataille d'Alger</li>
+    						<li>Famille : Ex épouse de Jacques Vergès</li>
+					</ul>
+				</div>
+				<div id="Voyage-de-lutte-dj">
+					<h3 class="titre-h3">L'histoire de sa lutte contre le colonialisme</h3>
+					<p>
+					Née à Alger dans une famille de classe moyenne d'un père algérien et d'une mère tunisienne, elle est scolarisée à une école française. Elle rejoint le Front de libération nationale durant ses années étudiantes. Elle travaille plus tard comme officier de liaison, membre du « réseau bombes » et assistante personnelle de Yacef Saadi, chef de la Zone autonome d'Alger pendant la bataille d'Alger.
+					</p>
+					<table>
+							<thead>
+								<tr>
+									<th class="entete_table_djamila">Date</th>
+									<th class="entete_table_djamila">Actes</th>
+								</tr>
+						    </thead>
+							<tbody>
+								<tr>
+									<td class="cellule_table cellule_table_djamila">1954</td>
+									<td class="cellule_table cellule_table_djamila cellule_contenu"> À 19 ans, elle rejoint le Front de libération nationale (FLN). </td>
+								</tr>
+								<tr>
+									<td class="cellule_table cellule_table_djamila">1957</td>
+									<td class="cellule_table cellule_table_djamila  cellule_contenu">  Djamila est capturée. Elle porte des documents du FLN prouvant qu'elle est en contact avec le FLN. Les services spéciaux la torturent. Inculpée pour sa participation aux attentats, elle est condamnée à mort. À l’annonce du verdict, elle éclate de rire. 
+									</td>
+								</tr>  
+								<tr>
+									<td class="cellule_table cellule_table_djamila">07/03/1958</td>
+									<td class="cellule_table cellule_table_djamila cellule_contenu">  Le verdict a été rendu , mais le monde entier a éclaté et la Commission des droits de l'homme des Nations Unies s'est réunie après avoir reçu des millions de dénonciations du monde entier et réclamé sa libération. 
+									</td>
+								</tr> 
+								<tr>
+									<td class="cellule_table cellule_table_djamila">1962</td>
+									<td class="cellule_table cellule_table_djamila cellule_contenu">
+										Après la libération de l'Algérie en 1962, Djamila Bouhaird quitta la prison . 
+									</td>
+								</tr>
+								<tr>
+									<td class="cellule_table cellule_table_djamila">
+										1965
+									</td>
+									<td class="cellule_table cellule_table_djamila cellule_contenu">
+										elle travaille avec Jacques Vergès sur Révolution africaine, un magazine des révolutions nationalistes africaines. Elle a 30 ans quand ils se marient. Ils auront ensemble deux enfants.
+									</td>
+							   </tr>
+							   
+						    </tbody>
+						</table>
+				</div>
+				<div id="Hirak-dj">
+					
+					<h3 class="titre-h3"> Le trait d'union pour la démocratie algérienne  </h3>
+					<p>
+					  Le 1er mars 2019, à 84 ans, elle manifeste pour protester contre la candidature d'Abdelaziz Bouteflika à la prochaine élection présidentielle.
+					 </p>
+
+					<p>   <!-- q: citation -->
+						 	 <!-- Tout ce qui est mis entre <q> est une citation ou un dicton dite par un personnage --> 
+						<q> J’ai l’impression de revivre la Révolution  </q>, lâche avec une forte émotion Djamila Bouhired , l’héroïne de la guerre d’indépendance, lorsqu’elle entame la descente du boulevard Didouche Mourad pour conduire la marche vers la place Maurice Audin. 
+					</p>
+						 <!-- q: citation -->
+						 	 <!-- Tout ce qui est mis entre <q> est une citation ou un dicton dite par un personnage --> 
+					<p>  <q> Je veux marcher avec mon peuple pour notre dignité </q> , réplique-t-elle dans une formidable communion entre la génération de Novembre 1954 et les fils de l’indépendance. Les Algériens retrouvent le fil de l’histoire. Un fil coupé depuis la mise en place du régime autoritaire au lendemain de l’indépendance. En marchant derrière celle qui été condamnée à mort pendant la Bataille d’Alger, le peuple renoue avec l’esprit d’indépendance et remet le fleuve détourné dans son cours naturel. Malgré la fatigue et le risque de débordement, Djamila Bouhired refuse de quitter la manifestation.
+					</p>
+					<!-- Table cotnenant quelque images des moments spéciale d'actualité de djamila bouhirad durant le HIRAK -->
+					<table class="Images-hirak" >
+							<tr > 
+								<td class="cel-img-bouhired-hirak">
+									<figure>
+									<img src="./Images/bouhired-Hirak.jpg" alt="Djamila Bouhired ,manifestation du  01 mars 2019">
+										<figcaption>
+									 <em>
+								 		 Djamila Bouhired ,manifestation du  01 mars 2019  
+								 	</em>
+										</figcaption>
+									</figure>	
+								</td>
+								<td class="cel-img-bouhired-hirak">
+									<figure >
+									<img src="./Images/manif-b-souhil.jpg" alt="Djamila Bouhired ,manifestation du  01 mars 2019" >
+									<figcaption>
+									 	<em>
+								 		 Djamila Bouhired ,manifestation du  01 mars 2019  
+								 		</em>
+									</figcaption>
+									</figure>	
+								</td>
+							</tr>
+					</table>
+					 <p>Le 19 avril 2019, elle participe à la manifestation du neuvième vendredi consécutif pour rejeter le système en Algérie et exiger le passage à une deuxième république , à Alger  . </p> 
+					 <table class="Images-hirak" id="hirak-avril" >
+							<tr > 
+								<td class="cel-img-bouhired-hirak">
+								 <figure class="bouhired-hirak-avril">
+									<img src="./Images/bouhired-hirak-19.jpg" alt="Djamila Bouhired ,manifestation du  19 avril 2019">
+									<figcaption>
+										<em>
+								 		 Djamila Bouhired ,manifestation du  19 avril 2019  
+
+										</em>
+									</figcaption>
+								</figure>	
+								</td>	
+							</tr>
+					</table>
+					<p>
+						<q> Elle était là, et elle a été acclamée. C’est le soutien. C’est comme une chaîne entre la période de lutte pour l’indépendance et la construction de la démocratie en Algérie. C’est la continuité d’un projet de liberté. C’est très important que des gens qui ont participé à la libération du pays soient là pour dire : “Le travail n’est pas fini ! </q> analyse  la sociologue Feriel Lalami Fates. 
+					</p>
+				</div>
+				<div id="paroles-Djamila">
+					<h3 class="titre-h3">Ses Plus populaires parolles  </h3>
+					<div>
+						<h5 class="titre-h5"> Lors de la révolution </h5>
+						<p> 
+						  Lorsque les tortionnaires n’ont réussi à lui extorquer aucun aveu,  son  procès a été décidé "condamné à mort" en 1957. Au procès, immédiatement après le verdict, elle a répété sa phrase célèbre:   </p>
+						  <q class="poeme">Je sais que vous allez me condamner à mort sans oublier que vous tuez les traditions de la liberté dans votre pays Devenir libre et indépendant.
+						  </q>
+					    <p>
+							Quand les étudiants algériens ont scandé dans la colonne du matin, "La France est notre mère", elle a crié: <q class="poeme"> L'Algérie est en sécurité.</q> 
+							Le maître d'école français l'a sortie de la colonne du matin et l'a punie, mais elle n'a pas reculé.
+						</p>	
+					</div>
+					<div>
+						<h5 class="titre-h5"> Aprés  la révolution </h5>
+						<q class="poeme">
+					 		 J’ai l’impression de revivre la Révolution  </q>
+					 	<q class="poeme">
+						 	 Ne rien lâcher jusqu’à la victoire finale. C’est une seconde indépendance qui est en marche. Ne les laissez pas voler votre victoire !
+						</q>
+					</div>
+				</div>
+				<div id="paroles-sur-djamila">
+					<h3 class="titre-h3">Citations</h3>
+					<p>Djamila devient un prénom populaire dans le monde arabo-musulman. Feriel Lalami Fates  : </p>
+						<q class="poeme">Le régime lui-même en a fait une icône, dans la mesure où, après l’indépendance, elle a sillonné beaucoup de pays pour que la jeune république algérienne soit connue, sous un visage agréable</q>
+						<q class="poeme">
+						Il y avait les petites filles nommées Houria, ça veut dire “liberté”, et les petites Djamila, les parents dont c’était un modèle absolu de lutte, de dignité et de liberté.
+						</q>
+					
+				</div>
+			</div>
+		</div>
+		</section>
+	
+	</article>
+	<!-- Fin de l'article -->
+	<!-- Pied de page contenant une citation sur le sujet abordé par le site -->
+	<footer>
+				<!-- citation sur femme algérienne -->
+
+		<q> La femme a été mise au monde pour s'arranger de tout et pour tout arranger .  </q>
+	</footer>
+</body>
+</html>

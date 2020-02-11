@@ -1,0 +1,247 @@
+  /**************************************************************************/
+  /******************** CSS destiné au Style des axes   *******************/
+ /************des 3 pages : Histoire , Art et culture et Sport************/
+/*************************************************************************/
+
+
+
+
+/* le header de l'accueil */
+header{
+	width: 100%;
+}
+
+/******************** le rectangle de l'axe !*********************************** */
+/* dessiner un rectangle dans le header avec des paddings et marges */
+
+.axe-global{
+	margin-left: 8%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-right: 1%;
+    z-index: 1;
+}
+
+/* les cartes de l'axe : les périodes : ici se sont les propriétés communes */
+.axe-temp
+{
+	float:left; /* floteemnt à droite */
+	width: 30%; /* 30% de l'axe */
+	color:white; /* couleur de text blanche */
+	text-align: center; /* allignement au centre */
+	vertical-align: center; 
+	padding: 1.5%;
+    font-size: 22px;/* les bordures */
+    border : 1.5px solid black ; 
+    border-left : none ;
+    border-right : none ;
+
+}
+/* quand le hover survient sur une des parties  */
+.axe-temp:hover{
+	background-color:transparent;
+	  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+	color: rgba(240, 162, 36,0.85);
+	font-weight: bold;
+} 
+
+/* background  1 ére période  */
+.axe-passé{
+	background-color: rgba(212, 47, 36,0.85); 
+}
+/* background  2 éme  période  */
+
+.axe-présent{
+	background-color: rgba(45, 170, 150,0.7);
+}
+/* background  3éme  période  */
+
+.axe-futur{
+    background-color: rgba(240, 162, 36,0.85); 
+}
+
+
+/* le div des barres + cartes (etiquettes)*/
+.barres-carte{
+	margin-top: -5%;
+
+} 
+/****************** les barres ****************/
+/* la barre qui relie le rectangle et les étiquettes : css commun des 3 barres */
+.bare{
+float :left;    transform: rotate(15deg);
+    width: 3px;
+    height: 25px;
+}
+
+
+/* le div des barres */
+.barres{
+	clear: both; 
+
+}
+
+/* positionnement de la barre d'adroite */
+.bare-right {
+margin-left : 20%;
+background-color: rgba(212, 47, 36,0.85);
+
+}
+
+/* positionnement de la barre de gauche  */
+
+.bare-left {
+margin-left : 27%;
+background-color: rgba(240, 162, 36,0.85); 
+
+}
+/* positionnement de la barre  au milieu  */
+
+.bare-middle {
+margin-left : 26%;
+background-color: rgba(45, 170, 150,0.7);
+
+}
+
+/* div des cartes  */
+
+.cartes{
+	clear : both;
+}
+/* les étiquettes */
+
+.carte-per{
+	
+	float: left;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border : 1.5px solid #ccc;
+	padding : 1%;
+	tranform : skew(-30deg);/* permet faire un angle aigu dans le rectangle  pour qvoir un Parallélogramme
+     trouver sur w3C : méthode incline un élément le long des axes X et Y des angles donnés. ; */
+	-webkit-transform:skew(-30deg);
+	-moz-transform:skew(-30deg);
+	-o-transform:skew(-30deg);
+	
+	text-align: center;
+	font-style: normal;
+
+}
+
+/* les élément strong des cartes et donc le nom des personnages */
+.carte-per strong{
+	color : hsl(0, 0%, 24%) ;
+	text-align : center ;
+}
+/* les propriétés  spécifique au étiquettes droites  */
+
+.carte-right {
+margin-left : 13.5%;
+background-color: rgba(212, 47, 36,0.45);
+
+}
+/* les propriétés  spécifique au étiquettes gauches   */
+
+.carte-left {
+margin-left : 19%;
+background-color: rgba(240, 162, 36,0.45); 
+
+}
+/* les propriétés  spécifique au étiquettes millieu   */
+
+.carte-middle {
+margin-left : 20%;
+background-color: rgba(45, 170, 150,0.45);
+
+
+}
+
+
+/* lors du hover de la carte ! */
+.carte-per:hover{
+	/*background-color: lightgrey ; */
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* dés que les cartes sont actives (au moment du clic ) */
+.carte-right:active{
+opacity: 1 ;  
+border-color: rgba(207, 0, 15, 1) !important;
+background-color:  rgba(255, 148, 120, 1);
+}
+.carte-middle:active{
+opacity: 1 ; 
+ border-color: rgba(27, 163, 156, 1) !important;
+ background-color: rgba(41, 241, 195, 1); 
+}
+.carte-left:active{
+opacity: 1 ; 
+background-color:#F5AB35
+;
+ border-color: rgba(211, 84, 0, 1) !important;
+}
+
+
+/* pour la partie art uniquement  car il y en un 3 donc un de plus et donc le style difére  */ 
+
+.carte-right-art{ 
+	
+margin-left : 12%;
+background-color: rgba(212, 47, 36,0.45);
+
+}
+
+.carte-middle-right-art{
+margin-left : 10%;
+background-color: rgba(210, 180, 222,0.75);
+
+}
+.carte-middle-art{
+margin-left : 10%;
+background-color: rgba(45, 170, 150,0.45);
+
+}
+.carte-left-art{
+margin-left : 14%;
+background-color: rgba(240, 162, 36,0.45); 
+
+}
+.bare-right-art{
+
+margin-left : 19%;
+background-color: rgba(212, 47, 36,0.85);
+}
+.bare-middle-right-art{
+margin-left : 17%;
+background-color: rgba(174, 168, 211, 0.7);
+}
+.bare-middle-art{
+margin-left : 21%;
+background-color: rgba(45, 170, 150,0.7);
+}
+.bare-left-art{
+margin-left : 21%;
+background-color: rgba(240, 162, 36,0.85); 
+}
+
+
+/**************************le triangllllllllllle **********************/
+/* W3C : draw shape;*/
+.triangle-right {
+	height: 0;
+	border-top: 60px solid transparent;
+	border-left: 100px solid rgba(240, 162, 36,0.85);
+	border-bottom: 60px solid transparent;
+	margin-left: 90%;
+	margin-top: -8.5%;
+	z-index: 2;
+}
+
+/* les figure des personages */
+.figure_personnage{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%; /* l'effet rond */
+
+}
+
