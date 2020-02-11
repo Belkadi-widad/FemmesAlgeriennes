@@ -9,6 +9,6 @@ Our work has been structured as follows:
 a bibliography with a menu allowing the navigation of its different parts
 - Art and culture page: The page is structured a little differently . In addition it contains a menu by area (Drawing, literature) and a gallery section which allows you to view a photo album representing the role of the Algerian woman in the evolution of the various fields of art and culture in time.
 
-Note: Unfortunately it's not a responsive site .
+ Note: Unfortunately it's not a responsive site .
 
  
